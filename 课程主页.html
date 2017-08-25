@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课程主页</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <script type="application/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="application/javascript" src="js/bootstrap.min.js"></script>
+
+    <style>
+        li{
+            list-style: none;
+        }
+        .leftimg{
+            width: 56px;
+            height: 56px;
+        }
+        .flol{
+            float:left;
+        }
+        body{
+            margin-top: 50px;
+            background-color:#fafafa;
+        }
+
+        .textwhite{
+            color: white;
+        }
+        .bgwhite{
+            background-color:white;
+        }
+        @media screen and (min-width: 768px){
+
+        }
+        .biankuang{
+            padding: 10px 15px;
+        }
+        .leftstyle{
+            height: calc(100% - 53px);
+            background-color: #202f3a;
+            max-width: 280px;
+            z-index: 3000;
+            overflow-y: auto;
+            overflow-x: hidden;
+            position: fixed;
+            top: 50px;
+            left: 0;
+        }
+        .top{
+            margin-top: 20px;
+        }
+        .dibu{
+            background-color: #ffffff;
+            border-style: solid;
+            border-color: #bfbfbf;
+            border-width: 1px;
+            margin-bottom: 40px;
+        }
+        .youxia{
+            position: fixed;
+            top: 95%;
+            right: 10px;
+        }
+        @media screen and (max-width: 768px){
+            .yincang{
+                display: none;
+            }
+        }
+        a{
+            color:black;
+        }
+        .inline{
+            display:inline ;
+        }
+        .paddtd{
+            padding:12px 24px;
+        }
+        .center{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<!--头-->
+
+<nav class="bgwhite navbar navbar-default navbar-fixed-top" style="border:0 0 1px 0; border-color: #ddd;">
+    <div class="navbar-nav">
+        <a href="首页.html"><img src="images/logo.png" class="img-responsive" alt="coursera"></a>
+    </div>
+    <form class="navbar-form navbar-left yincang" style="position: relative;right: -22%;">
+        <!--<a href=""><span class="glyphicon glyphicon-search" ></span></a>-->
+        <div class="input-group">
+            <span class="input-group-btn">
+                <button class="btn btn-default" type="button"onclick="window.location.href='选课目录.html';"><span class="glyphicon glyphicon-list">&nbsp;目录</span></button>
+            </span>
+            <input type="text" class="form-control" placeholder="搜索目录" >
+            <span class="input-group-btn">
+                 <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+            </span>
+        </div>
+    </form>
+    <ul class=" navbar-nav nav navbar-right yincang">
+        <li><a href="" class="paddtd"><h4 class="inline">合作伙伴</h4></a></li>
+        <li><a href="" data-toggle="dropdown" class="paddtd" aria-expanded="true">
+            <h4 class="inline">Team</h4>
+            <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+            <li><a href="课程主页.html">课程控制面板</a></li>
+            <li><a href="Coursera个人课程首页（课程）.html">个人资料</a></li>
+            <li><a href="Coursera个人课程首页（成就）.html">成就</a></li>
+            <li><a href="#">设置</a></li>
+            <li><a href="#">签名追踪</a></li>
+            <li><a href="#">退出</a></li>
+        </ul></li>
+    </ul>
+</nav>
+
+<!--左侧-->
+<div class="row">
+    <div class="leftstyle textwhite yincang col-md-3">
+        <br>
+        <a href="" > <img class="leftimg img-circle" src="images/logo2.png " style="position: relative;right: -37%;" alt="univlogo"></a>
+        <h4 class="center">如何学习：学习困难科目的实用思维方法</h4>
+        <h6 class="center">由洛阳师范学院提供</h6>
+        <br>
+        <div>
+        </div>
+            <div class="navbar navbar-collapse" id="y">
+                <ul class="nav">
+                    <li>
+                        <a class="" href="#">
+                            <span class="glyphicon glyphicon-home  textwhite">&nbsp;课程主页</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#zuoc" data-toggle="collapse">
+                            <span class="glyphicon glyphicon-list textwhite">&nbsp;课程内容</span>
+                        </a>
+                        <ul id="zuoc" class="nav collapse">
+                            <li class="biankuang"><a href="课程内容.html"class="textwhite">&nbsp;第1周</a> </li>
+                            <li class="biankuang"><a href="课程内容.html"class="textwhite">&nbsp;第2周</a> </li>
+                            <li class="biankuang"><a href="课程内容.html"class="textwhite">&nbsp;第3周</a> </li>
+                            <li class="biankuang disabled"><a href=""class="textwhite"><span class="flol glyphicon glyphicon-lock "></span>&nbsp;第4周</a> </li>
+                            <li class="biankuang disabled"><a href=""class="textwhite"><span class="flol glyphicon glyphicon-lock "></span>&nbsp;Further Exploration and Resources </a></li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a class=" " href="课程讨论.html">
+                            <span class="glyphicon glyphicon-comment textwhite">&nbsp;讨论</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="课程信息.html">
+                            <span class="glyphicon glyphicon-info-sign  textwhite">&nbsp;课程信息</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    </div>
+<!--中间-->
+    <div class="top col-md-9 col-md-offset-3">
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="heading1"style="background-color: #ffffff">
+                <h4 class="panel-title">
+                    <img src="images/Barb-Oakley---Author-photo.tif" class="img-circle" alt=""/><b>  Barbara Oakley</b>
+
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#a" aria-expanded="false" aria-controls="collapseTwo">
+                        <button type="button" class="btn btn-default pull-right">
+                            显示 <span class="glyphicon glyphicon-triangle-bottom"></span>
+                        </button>
+                    </a>
+                </h4>
+            </div>
+            <div id="a" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+                <div class="panel-body">
+                    <h3>热情的问候！</h3>
+                    <p>欢迎学习如何学习，我们很高兴认识你！你加入了世界上最受欢迎的网络课程之一。</p>
+                    <h3>开始！</h3>
+                    <p>开始，我们建议采取几分钟探索课程网站。点击左边的课程，看看每星期我们会用什么材料，以及预览的作业，你需要完成的课程。点击讨论看论坛，你可以在课堂上与同学们讨论课程材料。。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="heading2"style="background-color: #ffffff">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#b" aria-expanded="false" aria-controls="collapseThree">
+                        <h3>让您的学习成果得到认可</h3>
+                        <h5>您可以使用认证证书来展示自己在美国加州大学圣地亚哥分校课程中学到的技能</h5>
+                        <hr/>
+                        <button type="button" class="btn btn-default">
+                            显示<span class="glyphicon glyphicon-triangle-bottom"></span>
+                        </button>
+                    </a>
+                </h4>
+            </div>
+            <div id="b" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                <div class="panel-body row">
+                    <div class="col-md-6">
+                        <img src="images/zhengshu.png" alt=""/>
+                    </div>
+                    <div class="col-md-6">
+                        <p>保障性：由一流大学和Coursera联合颁发</p>
+                        <p>真实性：课程完成度与身份证明相联</p>
+                        <p>分享性：在个性化定制的页面上分享你的成果，包括领英网。</p>
+                        <p>可购性：定价为 $29</p>
+                        <button type="button"class="btn btn-success">立即购买￥29</button>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <a href="">获得认证证书</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h3>我的课程进展</h3>
+            <div class="panel panel-default row">
+                <div class="panel-heading" role="tab" id="heading4"style="background-color: #ffffff">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#c1" aria-expanded="false" aria-controls="collapseTwo">
+                            <h4 class="col-md-9">第1周 | 如何学习?</h4>
+                            <h5 class="col-md-3">due 八月 2, 11:59 晚上 PDT</h5>
+                            <br/>
+                            <div class="col-md-10 glyphicon glyphicon-triangle-right" style="background-color: #bfbfbf">0/1 分配通过</div>
+                        </a>
+                    </h4>
+                    <button type="button" class="btn btn-default" onclick="window.location.href='课程内容.html';">
+                        前往第1周 <span class="glyphicon glyphicon-menu-right"></span>
+                    </button>
+                </div>
+                <div id="c1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
+                    <div class="panel-body">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item disabled">
+                                Assignment 已通过
+                            </a>
+                            <a href="#" class="list-group-item">问题:如何学习?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default row">
+                <div class="panel-heading" role="tab" id="heading5"style="background-color: #ffffff">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#c2" aria-expanded="false" aria-controls="collapseTwo">
+                            <h4 class="col-md-9">第2周 | 组块</h4>
+                            <h5 class="col-md-3">due 八月 2, 11:59 晚上 PDT</h5>
+                            <br/>
+                            <div class="col-md-10 glyphicon glyphicon-triangle-right" style="background-color: #bfbfbf">0/1 分配通过</div>
+                        </a>
+                    </h4>
+                    <button type="button" class="btn btn-default" onclick="window.location.href='课程内容.html';">
+                        前往第2周 <span class="glyphicon glyphicon-menu-right"></span>
+                    </button>
+                </div>
+                <div id="c2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
+                    <div class="panel-body">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item disabled">
+                                Assignment 已通过
+                            </a>
+                            <a href="#" class="list-group-item">问题:如何学习?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default row">
+                <div class="panel-heading" role="tab" id="heading6"style="background-color: #ffffff">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#c3" aria-expanded="false" aria-controls="collapseTwo">
+                            <h4 class="col-md-9">第3周 | 拖延和记忆</h4>
+                            <h5 class="col-md-3">due 八月 2, 11:59 晚上 PDT</h5>
+                            <br/>
+                            <div class="col-md-10 glyphicon glyphicon-triangle-right" style="background-color: #bfbfbf">0/1 分配通过</div>
+                        </a>
+                    </h4>
+                    <button type="button" class="btn btn-default" onclick="window.location.href='课程内容.html';">
+                        前往第3周 <span class="glyphicon glyphicon-menu-right"></span>
+                    </button>
+                </div>
+                <div id="c3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
+                    <div class="panel-body">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item disabled">
+                                Assignment 已通过
+                            </a>
+                            <a href="#" class="list-group-item">问题:如何学习?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default row">
+                <div class="panel-heading" role="tab" id="heading7"style="background-color: #ffffff">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#c4" aria-expanded="false" aria-controls="collapseTwo">
+                            <h4 class="col-md-9">第3周 | 文艺复兴学习和释放你的潜能</h4>
+                            <h5 class="col-md-3">due 八月 2, 11:59 晚上 PDT</h5>
+                            <br/>
+                            <div class="col-md-10 glyphicon glyphicon-triangle-right"style="background-color: #bfbfbf" >0/1 分配通过</div>
+                        </a>
+                    </h4>
+                    <button type="button" class="btn btn-default" onclick="window.location.href='课程内容.html';">
+                        前往第4周 <span class="glyphicon glyphicon-menu-right"></span>
+                    </button>
+                </div>
+                <div id="c4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading7">
+                    <div class="panel-body">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item disabled">
+                                Assignment 已通过
+                            </a>
+                            <a href="#" class="list-group-item">问题:如何学习?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="dibu row">
+            <div class="col-md-6">
+                <h3>我的课程设置</h3>
+                <p>期限设定</p>
+                <button type="button" class="btn btn-danger">关闭最后期限</button>
+            </div>
+            <div class="col-md-6">
+                <h3>验证设置</h3>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+                        认证设置 <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li style="text-align: center">注册您的证书</li>
+                        <button type="button" class="btn btn-success" style="margin-left: 50px">继续</button>
+                        <hr/>
+                        <li style="text-align: center"><a href="">关闭认证</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--右下角-->
+<div class="youxia">
+    <button type="button" class="btn btn-primary">帮助中心</button>
+</div>
+</body>
+</html>

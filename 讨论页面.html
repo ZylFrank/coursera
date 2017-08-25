@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>讨论页面</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <script type="application/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="application/javascript" src="js/bootstrap.min.js"></script>
+
+    <style>
+        a:hover{
+            text-decoration: none;
+        }
+        li{
+            list-style: none;
+        }
+        .stil{
+            position: relative;
+            top: -50px;
+        }
+        .leftimg{
+            width: 56px;
+            height: 56px;
+        }
+        .flol{
+            float:left;
+        }
+        body{
+            margin-top: 50px;
+            background-color:#fafafa;
+        }
+        .row{
+            margin:auto 1px;
+        }
+        .textwhite{
+            color: white;
+        }
+        .bgwhite{
+            background-color:white;
+        }
+        @media screen and (min-width: 768px){
+            .pingyi{
+                margin-left:280px;
+            }
+        }
+        .biankuang{
+            padding: 10px 15px;
+        }
+        .leftstyle{
+            height: calc(100% - 53px);
+            background-color: #202f3a;
+            max-width: 280px;
+            z-index: 3000;
+            overflow-y: auto;
+            overflow-x: hidden;
+            position: fixed;
+            top: 50px;
+            left: 0;
+        }
+        .youxia{
+            position: fixed;
+            top: 95%;
+            right: 10px;
+        }
+        @media screen and (max-width: 768px){
+            .yincang{
+                display: none;
+            }
+        }
+        a{
+            color:black;
+        }
+        .inline{
+            display:inline ;
+        }
+        .paddtd{
+            padding:12px 24px;
+        }
+        .center{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<!--头-->
+
+<nav class="bgwhite navbar navbar-default navbar-fixed-top">
+    <div class="navbar-nav">
+        <a href="首页.html"><img src="images/logo.png" class="img-responsive" alt="coursera"></a>
+    </div>
+    <form class="navbar-form navbar-left yincang" style="position: relative;right: -22%;">
+        <!--<a href=""><span class="glyphicon glyphicon-search" ></span></a>-->
+        <div class="input-group">
+            <span class="input-group-btn">
+                <button class="btn btn-default">
+                    <span class="glyphicon glyphicon-th-list">&nbsp;目录</span>
+                </button>
+            </span>
+            <input type="text" class="form-control" placeholder="搜索目录" >
+            <span class="input-group-btn">
+                 <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+            </span>
+        </div>
+    </form>
+    <ul class=" navbar-nav nav navbar-right yincang">
+        <li><a href="" class="paddtd"><h4 class="inline">合作伙伴</h4></a></li>
+        <li><a href="" data-toggle="dropdown" class="paddtd" aria-expanded="true">
+            <h4 class="inline">用户名</h4>
+            <span class="caret"></span>
+        </a>
+            <ul class="dropdown-menu">
+                <li><a href="#">课程控制面板</a></li>
+                <li><a href="#">个人资料</a></li>
+                <li><a href="#">成就</a></li>
+                <li><a href="#">设置</a></li>
+                <li><a href="#">Signatrue Track</a></li>
+                <li><a href="#">退出</a></li>
+            </ul></li>
+    </ul>
+</nav>
+
+<!--左侧-->
+<div class="leftstyle textwhite yincang">
+    <br>
+    <a href="课程HOME.html" > <img class="leftimg img-circle" src="images/logo2.png " style="position: relative;right: -37%;" alt="univlogo"></a>
+    <h4 class="center">如何学习：学习困难科目的实用思维方法</h4>
+    <h6 class="center">由洛阳师范学院提供</h6>
+    <br>
+    <div>
+    </div>
+    <div class="navbar navbar-collapse" id="y">
+        <ul class="nav">
+            <li>
+                <a class="" href="课程HOME.html">
+                    <span class="glyphicon glyphicon-home  textwhite">&nbsp;Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#zuoc" data-toggle="collapse">
+                    <span class="glyphicon glyphicon-list textwhite">&nbsp;课程内容</span>
+                </a>
+                <ul id="zuoc" class="nav collapse">
+                    <li class="biankuang"><a href="课程内容.html"class="textwhite">&nbsp;第1周</a> </li>
+                    <li class="biankuang"><a href="课程内容.html"class="textwhite">&nbsp;第2周</a> </li>
+                    <li class="biankuang"><a href="课程内容.html"class="textwhite">&nbsp;第3周</a> </li>
+                    <li class="biankuang disabled"><a href=""class="textwhite"><span class="flol glyphicon glyphicon-lock "></span>&nbsp;第4周</a> </li>
+                    <li class="biankuang disabled"><a href=""class="textwhite"><span class="flol glyphicon glyphicon-lock "></span>&nbsp;Further Exploration and Resources </a></li>
+                </ul>
+            </li>
+            <li herf="#">
+                <a class=" " href="课程讨论.html">
+                    <span class="glyphicon glyphicon-comment textwhite">&nbsp;讨论</span>
+                </a>
+            </li>
+            <li>
+                <a class="" href="课程信息.html">
+                    <span class="glyphicon glyphicon-info-sign  textwhite">&nbsp;课程信息</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--中间-->
+<div class=" pingyi">
+    <!--右侧-->
+    <div class="row">
+        <br>
+        <div class="col-sm-3">
+            <h4>课程论坛</h4>
+            <div class="list-group">
+                <!--列表组-->
+                <a href="" class="list-group-item">所有课程讨论</a>
+                <a href="" class="list-group-item">一般性讨论</a>
+                <a href="" class="list-group-item">会面和问候</a>
+                <a href="" class="list-group-item">小组学习</a>
+                <a href="" class="list-group-item"> MATLAB 帮助</a>
+            </div>
+            <br>
+            <h4>周论坛</h4>
+            <div class="list-group">
+                <a href="" class="list-group-item">1. 介绍</a>
+                <a href="" class="list-group-item">2.多元线性回归</a>
+                <a href="" class="list-group-item">3. 对数几率回归</a>
+                <a href="" class="list-group-item">4. 神经网络：表示</a>
+                <a href="" class="list-group-item">5. 神经网络：学习</a>
+                <a href="" class="list-group-item">6. 机器学习的建议</a>
+                <a href="" class="list-group-item">7. 支持向量机</a>
+                <a href="" class="list-group-item">8. 无监督学习</a>
+                <a href="" class="list-group-item">9. 异常检测</a>
+                <a href="" class="list-group-item">10.大规模机器学习</a>
+                <a href="" class="list-group-item">11. 应用实例：照片</a>
+            </div>
+        </div>
+        <div class="col-sm-9">
+            <div>
+                <h4><a href="课程讨论.html"><span class="glyphicon glyphicon-arrow-left"></span>所有课程讨论</a></h4>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <ul>
+                        <li>
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object img-circle" src="images/picture000.jpg" alt="头像">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">逻辑回归单元测试 <span class="glyphicon glyphicon-screenshot"></span></h4>
+                                    <p class="small"><a href="#">Vicc Alexander </a>· 3个月前 · <a href="#">Logistic Regression</a> </p>
+                                    <p>在以前的版本这个课程我们足够幸运有单元测试来测试我们的功能错误之前提交他们（也许汤姆可能想带来一些比他年长的回来？）。</p>
+                                    <p>对于那些不知道的，单元测试本质上是测试函数在你的代码中的实践，以确保他们的工作，如预期。你可以判断你的功能是否正常工作，通过交叉引用你的答案与下面的答案。这有助于识别任何故障的算法/逻辑。</p>
+                                    <p>我已经提供了一些我自己的方法技巧。希望这能帮助你们中的一些人！</p>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object img-circle" src="images/Lko-Ph-x.jpg" alt="头像">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">导师提示提交您的工作（链接） <span class="glyphicon glyphicon-screenshot"></span></h4>
+                                    <p class="small"><a href="#">Tom MosherMentor  </a>· 1天前 · <a href="#">General Discussion</a> </p>
+                                    <p>这个帖子链接到主导师提示线：</p>
+                                    <a href="" id="hf_a">https://www.coursera.org/learn/machine-learning/discussions/vgCyrQoMEeWv5yIAC00Eog</a>
+                                    <br/>
+                                    <p>
+                                    <div class="btn-group">
+                                        <button id="zan">赞</button><button id="andone">0</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" id="gz">关注 <span class="badge" id="badge">12</span></a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#huifu" data-toggle="collapse">回复 <span class="glyphicon glyphicon-share-alt"></span></a>
+                                        <ul id="huifu" class="nav collapse">
+                                            <li>
+                                                <textarea name=""rows="4" cols="25" id="hf_ta"></textarea>
+                                                <lable> <button id="hf_btn"> 回 复</button> </lable>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    </p
+                                </div>
+                            </div>
+                            <hr>
+                        </li>
+
+                        <li>
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object img-circle" src="images/picture000.jpg" alt="头像">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">导师提示提交您的工作（链接） <span class="glyphicon glyphicon-screenshot"></span></h4>
+                                    <p class="small"><a href="#">Tom MosherMentor  </a>· 1天前 · <a href="#">General Discussion</a> </p>
+                                    <p>这个帖子链接到主导师提示线：</p>
+                                    <a href="">https://www.coursera.org/learn/machine-learning/discussions/vgCyrQoMEeWv5yIAC00Eog</a>
+                                    <br/>
+                                    <p>
+                                    <div class="btn-group">
+                                        <button>赞</button><button>0</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">关注 <span class="badge">12</span></a>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#huifu2" data-toggle="collapse">回复 <span class="glyphicon glyphicon-share-alt"></span></a>
+                                        <ul id="huifu2" class="nav collapse">
+                                            <li>
+                                                <textarea name="" rows="4" cols="25"></textarea>
+                                                <lable > <button> 回 复</button> </lable>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    </p
+                                </div>
+                            </div>
+                            <hr>
+                        </li>
+                        <li>
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object img-circle" src="images/Lko-Ph-x.jpg" alt="头像">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">导师提示提交您的工作（链接） <span class="glyphicon glyphicon-screenshot"></span></h4>
+                                    <p class="small"><a href="#">Tom MosherMentor  </a>· 1天前 · <a href="#">General Discussion</a> </p>
+                                    <p>这个帖子链接到主导师提示线：</p>
+                                    <a href="">https://www.coursera.org/learn/machine-learning/discussions/vgCyrQoMEeWv5yIAC00Eog</a>
+                                    <br/>
+                                    <p>
+                                    <div class="btn-group">
+                                        <button>赞</button><button>0</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">关注 <span class="badge">12</span></a>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#huifu3" data-toggle="collapse">回复 <span class="glyphicon glyphicon-share-alt"></span></a>
+                                        <ul id="huifu3" class="nav collapse">
+                                            <li>
+                                                <textarea name="" rows="4" cols="25"></textarea>
+                                                <lable ><button> 回 复</button> </lable>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    </p
+                                </div>
+                            </div>
+                            <hr>
+                        </li>
+                        <li>
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object img-circle" src="images/picture000.jpg" alt="头像">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">导师提示提交您的工作（链接） <span class="glyphicon glyphicon-screenshot"></span></h4>
+                                    <p class="small"><a href="#">Tom MosherMentor  </a>· 1天前 · <a href="#">General Discussion</a> </p>
+                                    <p>这个帖子链接到主导师提示线：</p>
+                                    <a href="">https://www.coursera.org/learn/machine-learning/discussions/vgCyrQoMEeWv5yIAC00Eog</a>
+                                    <br/>
+                                    <p>
+                                    <div class="btn-group">
+                                        <button>赞</button><button>0</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">关注 <span class="badge">12</span></a>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#huifu4" data-toggle="collapse">回复 <span class="glyphicon glyphicon-share-alt"></span></a>
+                                        <ul id="huifu4" class="nav collapse">
+                                            <li>
+                                                <textarea name="" rows="4" cols="25"></textarea>
+                                                <lable ><button> 回 复</button></lable>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    </p
+                                </div>
+                            </div>
+                            <hr>
+                        </li>
+                        <li>
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object img-circle" src="images/Lko-Ph-x.jpg" alt="头像">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">导师提示提交您的工作（链接） <span class="glyphicon glyphicon-screenshot"></span></h4>
+                                    <p class="small"><a href="#">Tom MosherMentor  </a>· 1天前 · <a href="#">General Discussion</a> </p>
+                                    <p>这个帖子链接到主导师提示线：</p>
+                                    <a href="">https://www.coursera.org/learn/machine-learning/discussions/vgCyrQoMEeWv5yIAC00Eog</a>
+                                    <br/>
+                                    <p>
+                                    <div class="btn-group">
+                                        <button>赞</button><button>0</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">关注 <span class="badge">12</span></a>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#huifu5" data-toggle="collapse">回复 <span class="glyphicon glyphicon-share-alt"></span></a>
+                                        <ul id="huifu5" class="nav collapse">
+                                            <li>
+                                                <textarea name="" rows="4" cols="25"></textarea>
+                                                <lable> <button> 回 复</button> </lable>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    </p
+                                </div>
+                            </div>
+                            <hr>
+                        </li> <li>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object img-circle" src="images/picture000.jpg" alt="头像">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">导师提示提交您的工作（链接） <span class="glyphicon glyphicon-screenshot"></span></h4>
+                                <p class="small"><a href="#">Tom MosherMentor  </a>· 1天前 · <a href="#">General Discussion</a> </p>
+                                <p>这个帖子链接到主导师提示线：</p>
+                                <a href="">https://www.coursera.org/learn/machine-learning/discussions/vgCyrQoMEeWv5yIAC00Eog</a>
+                                <br/>
+                                <p>
+                                <div class="btn-group">
+                                    <button>赞</button><button>0</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">关注 <span class="badge">12</span></a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#huifu6" data-toggle="collapse">回复 <span class="glyphicon glyphicon-share-alt"></span></a>
+                                    <ul id="huifu6" class="nav collapse">
+                                        <li>
+                                            <textarea name="" rows="4" cols="25"></textarea>
+                                            <lable ><button> 回 复</button> </lable>
+                                        </li>
+                                    </ul>
+                                </div>
+                                </p
+                            </div>
+                        </div>
+                        <hr>
+                    </li> <li>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object img-circle" src="images/Lko-Ph-x.jpg" alt="头像">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">导师提示提交您的工作（链接） <span class="glyphicon glyphicon-screenshot"></span></h4>
+                                <p class="small"><a href="#">Tom MosherMentor  </a>· 1天前 · <a href="#">General Discussion</a> </p>
+                                <p>这个帖子链接到主导师提示线：</p>
+                                <a href="">https://www.coursera.org/learn/machine-learning/discussions/vgCyrQoMEeWv5yIAC00Eog</a>
+                                <br/>
+                                <p>
+                                <div class="btn-group">
+                                    <button>赞</button><button>0</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">关注 <span class="badge">12</span></a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#huifu7" data-toggle="collapse">回复 <span class="glyphicon glyphicon-share-alt"></span></a>
+                                    <ul id="huifu7" class="nav collapse">
+                                        <li>
+                                            <textarea name="" rows="4" cols="25"></textarea>
+                                            <lable><button> 回 复</button> </lable>
+                                        </li>
+                                    </ul>
+                                </div>
+                                </p
+                            </div>
+                        </div>
+                        <hr>
+                    </li>
+                        <li>
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object img-circle" src="images/Lko-Ph-x.jpg" alt="头像">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">导师提示提交您的工作（链接） <span class="glyphicon glyphicon-screenshot"></span></h4>
+                                    <p class="small"><a href="#">Tom MosherMentor  </a>· 1天前 · <a href="#">General Discussion</a> </p>
+                                    <p>这个帖子链接到主导师提示线：</p>
+                                    <a href="">https://www.coursera.org/learn/machine-learning/discussions/vgCyrQoMEeWv5yIAC00Eog</a>
+                                    <br/>
+                                    <p>
+                                    <div class="btn-group">
+                                        <button>赞</button><button>0</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" >关注 <span class="badge">12</span></a>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#huifu1" data-toggle="collapse">回复 <span class="glyphicon glyphicon-share-alt"></span></a>
+                                        <ul id="huifu1" class="nav collapse">
+                                            <li>
+                                                <textarea name="" rows="4" cols="25"></textarea>
+                                                <lable> <button> 回 复</button> </lable>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    </p
+                                </div>
+                            </div>
+                            <hr>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+            <ul class="pagination">
+                <li><a href="#">&lt;&lt;</a> </li>
+                <li><a href="#">1</a> </li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">&gt;&gt;</a> </li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+<!--右下角-->
+<div class="youxia">
+    <button type="button" class="btn btn-primary">帮助中心</button>
+</div>
+</body>
+<script src="./js_file/my_js.js"></script>
+<script src="js/jquery-1.11.1.min.js"></script>
+</html>

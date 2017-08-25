@@ -1,0 +1,1 @@
+"use strict";define("nls/zh/socialPlugins",{"Scan QR code using WeChat. ":"Scan QR code using WeChat."});

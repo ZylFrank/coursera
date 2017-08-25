@@ -1,0 +1,1 @@
+"use strict";define("bundles/phoenix/components/flagging/views/nls/zh/flag",{"Report this":"举报该内容","Resolve report":"取消报告"});

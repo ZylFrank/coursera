@@ -1,0 +1,1 @@
+"use strict";define("bundles/phoenix/components/follow/views/nls/zh/follow",{Follow:"关注","Something went wrong. Please try again.":"系统出现错误。请稍后再试。",Unfollow:"取消关注","You will receive emails when answers are added.":"如果添加了新的回答，您将会收到邮件通知。"});

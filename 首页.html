@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>洛阳师范学院首页</title>
+
+    <link rel="stylesheet" href="./css/my_css.css"/>
+    <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/bootstrap-theme.min.css"/>
+    <script type="application/javascript" src="./js/jquery-1.11.1.min.js"></script>
+    <script type="application/javascript" src="./js/bootstrap.min.js"></script>
+    <style>
+        #bj-img{
+            background: url("./image/lynu.jpg");
+            height: 320px;
+        }
+        @media screen and (max-width:1140px) {
+            #sidebar {
+                display: none;
+            }
+        }
+        @media screen and (max-width:1200px) {
+            #sidebar2 {
+                display: none;
+            }
+        }
+        @media screen and (max-width:1000px) {
+            #sidebar3 {
+                display: none;
+            }
+        }
+        .cp_c{
+            margin: 0 auto;
+        }
+        .cp_c td{
+            position: relative;
+            overflow: hidden;
+        }
+        .cp_c span{
+            display: none;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            font-size: 8px;
+            background-color: brown;
+            color: #ffffff;
+            height: 30px;
+            width: 220px;
+            padding: 0 20px;
+            overflow: hidden;
+            margin-left: 10px;
+        }
+        .cp_c td a:hover span{
+            display:block;
+            padding-top: 2px;}
+        @media screen and (max-width:1140px) {
+            #sidebar {
+                display: none;
+            }
+        }
+        @media screen and (max-width:960px) {
+            #sidebartd2 {
+                display: none;
+            }
+        }
+        @media screen and (max-width:960px) {
+            #sidebartd3 {
+                display: none;
+            }
+        }
+        @media screen and (max-width:720px) {
+            #sidebartd4 {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+<!--
+<div id="loader" style="width: 100px; height: 100px"></div>
+-->
+<!--导航-->
+<div style="background-color: #eeeeee">
+<nav class="navbar navbar-default">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="./images/logo.png" alt="" style="margin-top: -10px"/></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="background-color: #ffffff">
+
+            <form class="navbar-form navbar-left" role="search">
+
+                <div class="input-group" >
+                    <input type="text" class="form-control" placeholder="搜索"  >
+                    <span class="input-group-addon">
+                        <a href="">
+                   <span class="glyphicon glyphicon-search"></span></a></span>
+                </div>
+
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href=""><span class=" glyphicon glyphicon-home"></span></a></li>
+                <li><a href="#">合作伙伴</a></li>
+                <li><a href="#"data-toggle="modal" data-target="#myModal">登录<span></span></a>
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <div style="margin-left: 140px"><img src="images/logo.png" alt=""class="img-responsive"/></div>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="input-group" >
+                                        <input type="text" class="form-control input-lg" placeholder="请输入邮箱号" id="email"/>
+                                         <span class="input-group-addon">
+                                           <a href="">
+                                           <span class=" glyphicon glyphicon-user"></span></a></span>
+
+                                    </div>
+                                    <br/>
+                                    <span id="info"></span>
+                                    <br/>
+                                    <div class="input-group" >
+                                        <input type="text" class="form-control input-lg" placeholder="" id="psw"/>
+                                         <span class="input-group-addon">
+                                           <a href="">
+                                               <span class=" glyphicon glyphicon-refresh"></span></a></span>
+                                    </div>
+                                    <br/>
+                                    <span id="psw_info">
+                                        <ul >
+                                            <li id="condition1">密码格式为6-14位的字符</li>
+                                            <li id="condition2">不允许有空格</li>
+                                        </ul>
+                                    </span>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                    <button type="button" class="btn btn-primary">登录</button>
+                                    <button type="button" class="btn btn-primary">注册</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+        </ul>
+        </div>
+    </div>
+</nav>
+    </div>
+<!--宣传广告-->
+
+<div class="container">
+<div class="img-responsive" id="bj-img">
+    <div class="pull-right" style="margin-top: 200px" id="sidebar">
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+    <p><a href="http://www.lynu.cn/"style="color: #ffffff"><h4>Luoyang Normal University »</h4></a></p>
+    </div>
+</div>
+</div>
+
+<!--内容导航面板-->
+<div class="container">
+    <ul class="nav nav-tabs">
+        <li>
+        <a href="#pan1" data-toggle="tab">热门课程</a>
+        </li>
+        <li>
+            <a href="#pan2" data-toggle="tab">最受中国学者欢迎</a>
+        </li>
+        <li>
+            <a href="#pan3" data-toggle="tab">学者推荐</a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active" id="pan1">
+            <div class="row">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 col-xs-12">
+                        <div class="thumbnail">
+                            <img src="./image/untitled1.png" alt="...">
+                            <div class="caption">
+                                <h4>金融导论<br/>
+                                    密歇根大学</h4>
+                                <p>...</p>
+                                <p><a href="Python课程简介.html" class="btn btn-primary" role="button">课程简介</a> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-xs-12">
+                        <div class="thumbnail">
+                            <img src="./image/untitled2.png" alt="...">
+                            <div class="caption">
+                                <h4>R 语言程序开发（中文版）
+                                    约翰霍普金斯大学</h4>
+                                <p>...</p>
+                                <p><a href="Python课程简介.html" class="btn btn-primary" role="button">课程简介</a> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-xs-12">
+                        <div class="thumbnail">
+                            <img src="./image/untitled3.png" alt="...">
+                            <div class="caption">
+                                <h4>数据科学家的工具箱
+                                    约翰霍普金斯大学
+                                </h4>
+                                <p>...</p>
+                                <p><a href="Python课程简介.html" class="btn btn-primary" role="button">课程简介</a> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-xs-12">
+                        <div class="thumbnail">
+                            <img src="./image/untitled4.png" alt="...">
+                            <div class="caption">
+                                <h4>创业的第一步
+                                    马里兰大学帕克分校</h4>
+                                <p>...</p>
+                                <p><a href="Python课程简介.html" class="btn btn-primary" role="button">课程简介</a> </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 col-xs-12">
+                        <div class="thumbnail">
+                            <img src="./image/untitled5.png" alt="...">
+                            <div class="caption">
+                                <h4>算法，第一部分<br/>
+                                    普林斯顿大学</h4>
+                                <p>...</p>
+                                <p><a href="Python课程简介.html" class="btn btn-primary" role="button">课程简介</a> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-xs-12">
+                        <div class="thumbnail">
+                            <img src="./image/untitled6.png" alt="...">
+                            <div class="caption">
+                                <h4>密码学 I<br/>
+                                    斯坦福大学</h4>
+                                <p>...</p>
+                                <p><a href="Python课程简介.html" class="btn btn-primary" role="button">课程简介</a> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-xs-12">
+                        <div class="thumbnail">
+                            <img src="./image/untitled7.png" alt="...">
+                            <div class="caption">
+                                <h4>人人都懂的编程课（Python）<br/>
+                                    密歇根大学</h4>
+                                <p>...</p>
+                                <p><a href="Python课程简介.html" class="btn btn-primary" role="button">课程简介</a> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-xs-12">
+                        <div class="thumbnail">
+                            <img src="./image/untitled8.png" alt="...">
+                            <div class="caption">
+                                <h4>社会心理学<br/>
+                                    卫斯连大学</h4>
+                                <p>...</p>
+                                <p><a href="Python课程简介.html" class="btn btn-primary" role="button">课程简介</a> </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="pan2">
+            <div class="row">
+                <div class="row">
+            <div class="col-sm-6 col-md-3 col-xs-12">
+                <div class="thumbnail">
+                    <img src="./image/A.jpg" alt="...">
+                    <div class="caption">
+                        <h4>中国古代历史与人物－秦始皇
+                            <br/>国立台湾大学</h4>
+                        <p>...</p>
+                        <p><a href="#" class="btn btn-primary" role="button">课程简介</a> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 col-xs-12">
+                <div class="thumbnail">
+                    <img src="./image/B.png" alt="...">
+                    <div class="caption">
+                        <h4>竞争策略<br/>
+                            路德维希马克西米利安慕尼黑</h4>
+                        <p>...</p>
+                        <p><a href="#" class="btn btn-primary" role="button">课程简介</a> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 col-xs-12">
+            <div class="thumbnail">
+                <img src="./image/C.jpg" alt="...">
+                <div class="caption">
+                    <h4>职场素养  <br/>
+                        国立台湾大学
+
+                    </h4>
+                    <p>...</p>
+                    <p><a href="#" class="btn btn-primary" role="button">课程简介</a> </p>
+                </div>
+            </div>
+        </div>
+            <div class="col-sm-6 col-md-3 col-xs-12">
+                <div class="thumbnail">
+                    <img src="./image/D.jpg" alt="...">
+                    <div class="caption">
+                        <h4>中国哲学经典著作导读
+                            <br/> 西安交通大学</h4>
+                        <p>...</p>
+                        <p><a href="#" class="btn btn-primary" role="button">课程简介</a> </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 col-md-3 col-xs-12">
+                <div class="thumbnail">
+                    <img src="./image/G.png" alt="...">
+                    <div class="caption">
+                        <h4>心理学与生活<br/>
+                            南京大学</h4>
+                        <p>...</p>
+                        <p><a href="#" class="btn btn-primary" role="button">课程简介</a> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 col-xs-12">
+                <div class="thumbnail">
+                    <img src="./image/H.png" alt="...">
+                    <div class="caption">
+                        <h4>高阶竞争策略
+                            路德维希马克西米利安慕尼黑大</h4>
+                        <p>...</p>
+                        <p><a href="#" class="btn btn-primary" role="button">课程简介</a> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 col-xs-12">
+                <div class="thumbnail">
+                    <img src="./image/F.jpg" alt="...">
+                    <div class="caption">
+                        <h4>Java程序设计<br/>
+                            北京大学</h4>
+                        <p>...</p>
+                        <p><a href="#" class="btn btn-primary" role="button">课程简介</a> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 col-xs-12">
+                <div class="thumbnail">
+                    <img src="./image/E.jpg" alt="...">
+                    <div class="caption">
+                        <h4>人体生理学导论（中文版）
+                            杜克大学</h4>
+                        <p>...</p>
+                        <p><a href="#" class="btn btn-primary" role="button">课程简介</a> </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+        </div>
+
+        <div class="tab-pane" id="pan3">
+            <div class="cp_c">
+                <table cellspacing="8px" cellpadding="5px"  border="0px" class="table table-responsive">
+                    <tr>
+                        <td><a href=""><img src="./image/untitled9.png" alt=""/><span>Web前端开发之HTML+CSS</span></a></td>
+                        <td id="sidebar"><a href=""><img src="./image/untitled9.png" alt=""/><span>Web前端开发之HTML+CSS</span></a></td>
+                        <td id="sidebartd2"><a href=""><img src="./image/untitled9.png" alt=""/><span>Web前端开发之HTML+CSS</span></a></td>
+                        <td id="sidebartd3"><a href=""><img src="./image/untitled9.png" alt=""/><span>Web前端开发之HTML+CSS</span></a></td>
+                        <td id="sidebartd4"><a href=""><img src="./image/untitled9.png" alt=""/><span>Web前端开发之HTML+CSS</span></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href=""><img src="./image/untitled9.png" alt=""/><span>Web前端开发之HTML+CSS</span></a></td>
+                        <td id="sidebar"><a href=""><img src="./image/untitled9.png" alt=""/><span>Web前端开发之HTML+CSS</span></a></td>
+                        <td id="sidebartd2"><a href=""><img src="./image/untitled9.png" alt=""/><span>Web前端开发之HTML+CSS</span></a></td>
+                        <td id="sidebartd3"><a href=""><img src="./image/untitled9.png" alt=""/><span>Web前端开发之HTML+CSS</span></a></td>
+                        <td id="sidebartd4"><a href=""><img src="./image/untitled9.png" alt=""/><span>Web前端开发之HTML+CSS</span></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href=""><img src="./image/untitled9.png" alt=""/><span>Web前端开发之HTML+CSS</span></a></td>
+                        <td id="sidebar"><a href=""><img src="./image/untitled9.png" alt=""/><span>Web前端开发之HTML+CSS</span></a></td>
+                        <td id="sidebartd2"><a href=""><img src="./image/untitled9.png" alt=""/><span>Web前端开发之HTML+CSS</span></a></td>
+                        <td id="sidebartd3"><a href=""><img src="./image/untitled9.png" alt=""/><span>Web前端开发之HTML+CSS</span></a></td>
+                        <td id="sidebartd4"><a href=""><img src="./image/untitled9.png" alt=""/><span>Web前端开发之HTML+CSS</span></a></td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    <!--更多课程-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5"></div>
+            <div class="col-md-2"><a href="选课目录.html"><p>查看更多课程>></p></a></div>
+            <div class="col-md-5"></div>
+        </div>
+    </div>
+   </div>
+<!--footer-->
+<hr style="margin-top: -5px"/>
+<div>
+    <div class="row container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-3 col-md-offset-1"><a href=""><img src="./images/logo2.png" alt="" class="img-responsive"/></a></div>
+            <div class="col-md-3 "><a href=""><img src="./images/logo.png" alt=""style="margin-top: 20px"/></a></div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row container">
+            <div class="col-md-2"></div>
+            <div class="col-md-2 col-md-push-1"><a href=""><h4>关于我们</h4></a></div>
+            <div class="col-md-2 col-md-push-1"><a href=""><h4>合作伙伴</h4></a></div>
+            <div class="col-md-2 col-md-push-1"><a href=""><h4>联系我们</h4></a></div>
+            <div class="col-md-2 col-md-push-1"><a href=""><h4>更多</h4></a></div>
+            <div class="col-md-2"><a href=""><h4>帮助</h4></a></div>
+        </div>
+    </div>
+    <hr style="margin-top: -10px"/>
+    <div class="container">
+        <div class="col-md-4"></div>
+
+        <div class="col-md-4">© 2015 Coursera Inc. 版权所有 - 沪ICP备15025210号</div>
+        <div class="col-md-4"></div>
+    </div>
+
+</div>
+</div>
+<script src="./js/jquery-1.11.1.min.js"></script>
+<script src="./js_file/my_js.js"></script>
+<script src="js_file/jquery.shCircleLoader-min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+"use strict";define("bundles/assess/questionTypes/regex/student/nls/zh/template",{"Enter answer here":"在此输入回答","Sorry, that’s not what we’re looking for.&nbsp;":"对不起，您的解答不正确。&nbsp;","Well done!&nbsp;":"真棒！&nbsp;"});

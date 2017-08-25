@@ -1,0 +1,1 @@
+"use strict";define("bundles/videojs/layout/nls/zh/playbackRateMenuSection",{"Playback Rate":"播放速率"});

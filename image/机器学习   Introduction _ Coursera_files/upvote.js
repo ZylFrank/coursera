@@ -1,0 +1,1 @@
+"use strict";define("bundles/phoenix/components/upvoting/views/nls/zh/upvote",{"Sorry, something went wrong. Please try again later.":".对不起，系统出错。请稍后重试。",Upvote:"赞",Upvoted:"已赞",Upvotes:"个赞"});

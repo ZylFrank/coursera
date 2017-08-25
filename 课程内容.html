@@ -1,0 +1,458 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课程内容</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <script type="application/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="application/javascript" src="js/bootstrap.min.js"></script>
+
+    <style>
+        .aaa{
+            text-align: right;
+        }
+        .bbb{
+            text-align: center;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+        .leftimg{
+            width: 56px;
+            height: 56px;
+        }
+        .flol{
+            float:left;
+        }
+        .clear{
+            clear: left;
+        }
+        body{
+            margin-top: 50px;
+            background-color:#fafafa;
+        }
+        .row{
+            margin:auto 1px;
+        }
+        .textwhite{
+            color: white;
+        }
+        .bgwhite{
+            background-color:white;
+        }
+        .right-rail {
+            margin-left: 20px;
+
+            padding: 16px 24px;
+            background-color: #202f3a;
+        }
+        @media screen and (min-width: 768px){
+            .pingyi{
+                margin-left:300px;
+		        margin-right:20px;
+            }
+        }
+        .biankuang{
+            padding: 10px 15px;
+        }
+        .leftstyle{
+            height: calc(100% - 53px);
+            background-color: #202f3a;
+            max-width: 280px;
+            z-index: 3000;
+            overflow-y: auto;
+            overflow-x: hidden;
+            position: fixed;
+            top: 50px;
+            left: 0;
+        }
+        .youxia{
+            position: fixed;
+            top: 95%;
+            right: 10px;
+        }
+        @media screen and (max-width: 768px){
+            .yincang{
+                display: none;
+            }
+            .pingyi{
+                margin: 25px;;
+            }
+        }
+        .newcol{
+            padding-right: 0;
+            padding-left: 0;
+        }
+        a{
+            color:black;
+        }
+        .aauto{
+            color: #2571ed;
+        }
+        .a1:hover{
+            background-color:#eef7ff;
+        }
+        .inline{
+            display:inline ;
+        }
+        .paddtop{
+            padding:15px 24px;
+        }
+        .paddtd{
+            padding:12px 24px;
+        }
+        .center{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<!--头-->
+
+<nav class="bgwhite navbar navbar-default navbar-fixed-top" style="border:0 0 1px 0; border-color: #ddd;">
+    <div class="navbar-nav">
+        <a href="首页.html"><img src="images/logo.png" class="img-responsive" alt="coursera"></a>
+    </div>
+    <form class="navbar-form navbar-left yincang" style="position: relative;right: -22%;">
+        <!--<a href=""><span class="glyphicon glyphicon-search" ></span></a>-->
+        <div class="input-group">
+            <span class="input-group-btn">
+                <button class="btn btn-default" type="button"onclick="window.location.href='选课目录.html';"><span class="glyphicon glyphicon-list">&nbsp;目录</span></button>
+            </span>
+            <input type="text" class="form-control" placeholder="搜索目录" >
+            <span class="input-group-btn">
+                 <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+            </span>
+        </div>
+    </form>
+    <ul class=" navbar-nav nav navbar-right yincang">
+        <li><a href="" class="paddtd"><h4 class="inline">合作伙伴</h4></a></li>
+        <li><a href="" data-toggle="dropdown" class="paddtd" aria-expanded="true">
+            <h4 class="inline">Team</h4>
+            <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+            <li><a href="课程主页.html">课程控制面板</a></li>
+            <li><a href="Coursera个人课程首页（课程）.html">个人资料</a></li>
+            <li><a href="Coursera个人课程首页（成就）.html">成就</a></li>
+            <li><a href="#">设置</a></li>
+            <li><a href="#">签名追踪</a></li>
+            <li><a href="#">退出</a></li>
+        </ul></li>
+    </ul>
+</nav>
+
+<!--左侧-->
+<div class="leftstyle textwhite yincang">
+    <br>
+    <a href="课程主页.html" > <img class="leftimg img-circle" src="images/logo2.png " style="position: relative;right: -37%;" alt="univlogo"></a>
+    <h4 class="center">如何学习：学习困难科目的实用思维方法</h4>
+    <h6 class="center">由洛阳师范学院提供</h6>
+    <br>
+    <div>
+    </div>
+        <div class="navbar navbar-collapse" id="y">
+            <ul class="nav">
+                <li>
+                    <a class="" href="课程主页.html">
+                        <span class="glyphicon glyphicon-home  textwhite">&nbsp;课程主页</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="#zuoc" data-toggle="collapse">
+                        <span class="glyphicon glyphicon-list textwhite">&nbsp;课程内容</span>
+                    </a>
+                    <ul id="zuoc" class="nav collapse">
+                        <li class="biankuang"><a href="课程内容.html"class="textwhite">&nbsp;第1周</a> </li>
+                        <li class="biankuang"><a href="课程内容.html"class="textwhite">&nbsp;第2周</a> </li>
+                        <li class="biankuang"><a href="课程内容.html"class="textwhite">&nbsp;第3周</a> </li>
+                        <li class="biankuang disabled"><a href=""class="textwhite"><span class="flol glyphicon glyphicon-lock "></span>&nbsp;第4周</a> </li>
+                        <li class="biankuang disabled"><a href=""class="textwhite"><span class="flol glyphicon glyphicon-lock "></span>&nbsp;Further Exploration and Resources </a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href=" 课程讨论.html" >
+                        <span class="glyphicon glyphicon-comment textwhite">&nbsp;讨论</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="" href="课程信息.html">
+                        <span class="glyphicon glyphicon-info-sign  textwhite">&nbsp;课程信息</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+</div>
+<!--中间-->
+<div class=" pingyi">
+    <!--第一周-->
+    <div class="row">
+        <h4>第1周</h4>
+        <div class="col-sm-8 newcol">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <img src="images/Barb-Oakley---Author-photo.tif" class="img-circle">
+                        Barbara Oakley
+                        <button data-toggle="collapse" class="pull-right btn btn-default" data-target="#x">显示</button>
+                    </h4>
+                </div>
+                <div class="panel-collapse" id="x">
+                    <div class="panel-body">
+                        <p>欢迎来到第一周学习如何学习！由于生活的大脑是非常复杂的，我们开始我们的课程，通过使用比喻和类比，以帮助简化问题。在这个模块中，你会发现几个基本上不同的思维模式，以及如何使用这些模式来提高你的学习。你也将被引入到一个解决拖延的工具，被给予一些关于记忆的实际信息，并发现令人惊讶的有用的学习和睡眠的见解。</p>
+                        <p>加入LHTL社区：与别人一起学习更有趣，所以请分享这个过程和这些想法与您的朋友和家人。分享有助于你自己的能力！我们建立了<a href="" class="aauto">一个facebook页面</a> 让人们了解MOOC，得到一些好吃的东西有关的课程和学习更新！（如果你给我们一个‘像’，我们也会喜欢！）。你可以找到官方学习如何学习推特帐户<a href="" class="aauto"> @LHTL_MOOC</a>如果你在推特，请跟我们说你好！我们经常在学习相关的东西，你可能会感兴趣的，那么看看和转发任何你喜欢的事！我们也有一个推特hashtag，# lh2l你用推特同学连接。</p>
+                        <p>快乐学习!</p>
+                        <p>Barb Oakley, Terry Sejnowski, 学习如何团队学习</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-xs-12 pull-right">
+            <div class="right-rail">
+                <p class=" textwhite">即将召开的会议:</p>
+                <h3 class=" textwhite bbb">8月10日 – 9月14日</h3>
+                <p class=" textwhite">
+                    <span>4周的学习</span>
+                </p>
+                <p class="aaa">
+                    <span class=" textwhite ">8月18日 招生结束 </span>
+                </p>
+                <div class="aaa">
+                    <button type="button" class="btn btn-primary textwhite">注册</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--tech-->
+    <div class="row">
+        <h4>教学单元</h4>
+        <div class="panel panel-default col-sm-12">
+            <div class="paddtop">
+                <h4 class="inline">聚焦与发散思维</h4>
+                <button type="button" class="inline pull-right btn btn-primary" onclick="window.location='视频.html'">开始教学单元</button>
+            </div>
+            <a href="视频.html" class="">
+                <div class="paddtd a1">
+                        <div class="flol glyphicon glyphicon-play-circle" style="font-size: 24px;">&nbsp;</div>
+                        <div class="inline clear">
+                            <p class="inline">聚焦和扩散模式介绍</p>
+                            <p class="inline small">&nbsp;&nbsp;5&nbsp;分</p>
+                        </div>
+                </div>
+            </a>
+            <a href="视频.html" class="">
+                <div class="paddtd a1">
+                    <div class="flol glyphicon glyphicon-play-circle" style="font-size: 24px;">&nbsp;</div>
+                    <div class="inline clear">
+                        <p class="inline">泰伦斯和巴巴拉奥克利的信号——课程结构介绍</p>
+                        <p class="inline small">&nbsp;&nbsp;3&nbsp;分</p>
+                    </div>
+                </div>
+            </a>
+            <a href="阅读.html" class="">
+                <div class="paddtd a1">
+                    <div class="glyphicon glyphicon-list-alt" style="font-size: 24px;">&nbsp;</div>
+                    <div class="inline clear">
+                        <p class="inline"> 欢迎和课程信息</p>
+                    </div>
+                </div>
+            </a>
+            <a href="阅读.html" class="">
+                <div class="paddtd a1">
+                    <div class="glyphicon glyphicon-list-alt" style="font-size: 24px;">&nbsp;</div>
+                    <div class="inline clear">
+                        <p class="inline">如何使用讨论论坛</p>
+                    </div>
+                </div>
+            </a>
+            <a href="视频.html" class="">
+                <div class="paddtd a1">
+                    <div class="flol glyphicon glyphicon-play-circle" style="font-size: 24px;">&nbsp;</div>
+                    <div class="inline clear">
+                        <p class="inline">采用集中和扩散模式——或者，一点点的大理将你</p>
+                        <p class="inline small">&nbsp;&nbsp;4&nbsp;分</p>
+                    </div>
+                </div>
+            </a>
+            <a href="视频.html" class="">
+                <div class="paddtd a1">
+                    <div class="flol glyphicon glyphicon-play-circle" style="font-size: 24px;">&nbsp;</div>
+                    <div class="inline clear">
+                        <p class="inline">如何学习？</p>
+                        <p class="inline small">&nbsp;&nbsp;6&nbsp;分</p>
+                    </div>
+                </div>
+            </a>
+            <a href="课程检测练习.html" class="">
+                <div class="paddtd a1">
+                    <div class="flol glyphicon glyphicon-star" style="font-size: 24px;">&nbsp;</div>
+                    <div class="inline clear">
+                        <p class="inline"><strong>练习测验:</strong> 介绍性测验</p>
+                        <p class="inline small">&nbsp;&nbsp;11&nbsp 分;问题</p>
+                    </div>
+                </div>
+            </a>
+            <a href="阅读.html" class="">
+                <div class="paddtd a1">
+                    <div class="glyphicon glyphicon-list-alt" style="font-size: 24px;">&nbsp;</div>
+                    <div class="inline clear">
+                        <p class="inline"> 了解你的同学</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="panel panel-default col-sm-12">
+            <div class="paddtop">
+                <h4>拖延，记忆和睡眠</h4>
+            </div>
+            <a href="视频.html" class="">
+                <div class="paddtd a1">
+                    <div class="glyphicon glyphicon-play-circle" style="font-size: 24px;">&nbsp;</div>
+                    <div class="inline">
+                        <p class="inline">正常的浏览</p>
+                        <p class="inline small">&nbsp;&nbsp;3&nbsp;分</p>
+                    </div>
+                </div>
+            </a>
+            <a href="视频.html" class="">
+                <div class="paddtd a1">
+                    <div class="glyphicon glyphicon-play-circle" style="font-size: 24px;">&nbsp;</div>
+                    <div class="inline">
+                        <p class="inline">永久实践</p>
+                        <p class="inline small">&nbsp;&nbsp;7&nbsp;分</p>
+                    </div>
+                </div>
+            </a>
+            <a href="视频.html" class="">
+                <div class="paddtd a1">
+                    <div class="glyphicon glyphicon-play-circle" style="font-size: 24px;">&nbsp;</div>
+                    <div class="inline">
+                        <p class="inline">记忆介绍</p>
+                        <p class="inline small">&nbsp;&nbsp;5&nbsp;分</p>
+                    </div>
+                </div>
+            </a>
+            <a href="视频.html" class="">
+                <div class="paddtd a1">
+                    <div class="glyphicon glyphicon-play-circle" style="font-size: 24px;">&nbsp;</div>
+                    <div class="inline">
+                        <p class="inline">睡眠在学习中的重要性</p>
+                        <p class="inline small">&nbsp;&nbsp;3&nbsp;分</p>
+                    </div>
+                </div>
+            </a>
+            <a href="视频.html" class="">
+                <div class="paddtd a1">
+                    <div class="glyphicon glyphicon-play-circle" style="font-size: 24px;">&nbsp;</div>
+                    <div class="inline">
+                        <p class="inline">和Dr. Terrence Sejnowski的讨论</p>
+                        <p class="inline small">&nbsp;&nbsp;15&nbsp;分</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="panel panel-default col-sm-12">
+            <div class="paddtop">
+                <h4>摘要</h4>
+            </div>
+            <a href="视频.html" class="">
+                <div class="paddtd a1">
+                    <div class="glyphicon glyphicon-play-circle" style="font-size: 24px;">&nbsp;</div>
+                    <div class="inline">
+                        <p class="inline">模块1视频摘要：</p>
+                        <p class="inline small">&nbsp;&nbsp;4&nbsp;分</p>
+                    </div>
+                </div>
+            </a>
+            <a href="视频.html" class="">
+                <div class="paddtd a1">
+                    <div class="glyphicon glyphicon-play-circle" style="font-size: 24px;">&nbsp;</div>
+                    <div class="inline">
+                        <p class="inline">关于接下来的什么事！玛丽安娜内斯特给出特别提示</p>
+                        <p class="inline small">&nbsp;&nbsp;1&nbsp;分</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="panel panel-default col-sm-12">
+            <div class="paddtop">
+                <h4>复习</h4>
+            </div>
+            <a href="课程检测页QuizFinal.html" class="">
+                <div class="paddtd a1">
+                    <div class="flol glyphicon glyphicon-star" style="font-size: 24px;">&nbsp;</div>
+                    <div class="inline clear">
+                        <p class="inline"><strong>检测:</strong> 如何学习?</p>
+                        <p class="inline small">&nbsp;&nbsp;6&nbsp;分</p>
+                    </div>
+                </div>
+            </a>
+            <a href="同学评审（说明）.html" class="">
+                <div class="paddtd a1">
+                    <div class="glyphicon glyphicon-user" style="font-size: 24px;">&nbsp;</div>
+                    <div class="inline clear">
+                        <p class="inline"><strong>同行审查:</strong> 可选视频项目：了解你的同学</p>
+                        <p class="inline small">&nbsp;&nbsp;6&nbsp;分</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="panel panel-default col-sm-12">
+            <div class="paddtop">
+                <h4>奖励：可选择进一步阅读</h4>
+            </div>
+            <a href="阅读.html" class="">
+                <div class="paddtd a1">
+                    <div class="flol glyphicon glyphicon-list-alt" style="font-size: 24px;">&nbsp;</div>
+                    <div class="inline clear">
+                        <p class="inline">阅读：聚焦与发散思维</p>
+                    </div>
+                </div>
+            </a>
+            <a href="阅读.html" class="">
+                <div class="paddtd a1">
+                    <div class="flol glyphicon glyphicon-list-alt" style="font-size: 24px;">&nbsp;</div>
+                    <div class="inline clear">
+                        <p class="inline">学习者在学习中焦虑、抑郁和创伤后应激障碍的一个帖子</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="panel panel-default col-sm-12">
+            <div class="paddtop">
+                <h4>奖励：可选的访问和可选的分配</h4>
+            </div>
+            <a href="视频.html" class="">
+                <div class="paddtd a1">
+                    <div class="glyphicon glyphicon-play-circle" style="font-size: 24px;">&nbsp;</div>
+                    <div class="inline">
+                        <p class="inline"> 可选的采访罗伯特博士的创造力与问题解决</p>
+                    </div>
+                </div>
+            </a>
+            <a href="视频.html" class="">
+                <div class="paddtd a1">
+                    <div class="glyphicon glyphicon-play-circle" style="font-size: 24px;">&nbsp;</div>
+                    <div class="inline">
+                        <p class="inline">可选的写作教练达芙妮灰色给予面试</p>
+                    </div>
+                </div>
+            </a>
+            <a href="视频.html" class="">
+                <div class="paddtd a1">
+                    <div class="glyphicon glyphicon-play-circle" style="font-size: 24px;">&nbsp;</div>
+                    <div class="inline">
+                        <p class="inline">可选的采访“本尼爱尔兰多语”学习语言</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<!--右下角-->
+<div class="youxia">
+    <button type="button" class="btn btn-primary">帮助中心</button>
+</div>
+</body>
+</html>

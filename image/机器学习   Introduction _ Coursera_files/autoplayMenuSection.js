@@ -1,0 +1,1 @@
+"use strict";define("bundles/videojs/layout/nls/zh/autoplayMenuSection",{Off:"关闭"});

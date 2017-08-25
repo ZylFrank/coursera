@@ -1,0 +1,1 @@
+"use strict";define("bundles/assess/questionTypes/checkboxPoll/student/nls/zh/headerTemplate",{"Checkbox Poll":"多项投票"});

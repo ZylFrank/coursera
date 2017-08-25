@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课程信息</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <script type="application/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="application/javascript" src="js/bootstrap.min.js"></script>
+
+    <style>
+        li{
+            list-style: none;
+        }
+        .leftimg{
+            width: 56px;
+            height: 56px;
+        }
+        .flol{
+            float:left;
+        }
+        body{
+            margin-top: 50px;
+            background-color:#fafafa;
+        }
+
+        .textwhite{
+            color: white;
+        }
+        .bgwhite{
+            background-color:white;
+        }
+        @media screen and (min-width: 768px){
+
+        }
+        .biankuang{
+            padding: 10px 15px;
+        }
+        .leftstyle{
+            height: calc(100% - 53px);
+            background-color: #202f3a;
+            max-width: 280px;
+            z-index: 3000;
+            overflow-y: auto;
+            overflow-x: hidden;
+            position: fixed;
+            top: 50px;
+            left: 0;
+        }
+
+        @media screen and (max-width: 768px){
+            .yincang{
+                display: none;
+            }
+        }
+        .tp{
+            text-align: center;
+        }
+        a{
+            color:black;
+        }
+        .inline{
+            display:inline ;
+        }
+        .paddtd{
+            padding:12px 24px;
+        }
+        .center{
+            text-align: center;
+        }
+        /*右侧部分*/
+        @media screen and (min-width: 768px){
+            .page_min{
+                margin-left: 250px;
+            }
+
+        }
+
+        .bjtp{
+            margin-left: 40px;
+            width: 100%;
+            height: 200px;
+            border-bottom:1px solid;
+            border-color: rgba(172, 175, 172, 0.91);
+            background: #122b40 url("images/guanggao1.png") no-repeat;
+            background-size: 100% 200%;
+
+        }
+        .pianyi{
+            margin-left: 30px;
+
+        }
+
+        /*上半部文字部分*/
+        .p1{
+            text-indent: 28px;
+        }
+
+        /*下半部内容文字*/
+        .xbt{
+            width: 100%;
+            padding-bottom: 10px;
+            border-color: #c0c0c0;
+            border-bottom: 1px solid;
+            margin-bottom: 10px;
+        }
+        .ceyan{
+            margin: 20px 0 20px 0;
+        }
+        /*右侧部分*/
+        .youce{
+            padding: 20px;
+        }
+        .p2{
+            font-size: 25px;
+            font-weight:bold;
+        }
+        .p3{
+            text-align: right;
+        }
+        /*帮助中心*/
+        .bzzx{
+            position: fixed;
+            right: 20px;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+<!--头-->
+
+<nav class="bgwhite navbar navbar-default navbar-fixed-top"  >
+    <div class="navbar-nav">
+        <a href="首页.html"><img src="images/logo.png" class="img-responsive" alt="coursera"></a>
+    </div>
+    <form class="navbar-form navbar-left yincang" style="position: relative;right: -22%;">
+        <!--<a href=""><span class="glyphicon glyphicon-search" ></span></a>-->
+        <div class="input-group">
+            <span class="input-group-btn">
+                <button class="btn btn-default" type="button" onclick="window.location.href='选课目录.html';"><span class="glyphicon glyphicon-list">&nbsp;目录</span></button>
+            </span>
+            <input type="text" class="form-control" placeholder="搜索目录" >
+            <span class="input-group-btn">
+                 <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+            </span>
+        </div>
+    </form>
+    <ul class=" navbar-nav nav navbar-right yincang">
+        <li><a href="" class="paddtd"><h4 class="inline">合作伙伴</h4></a></li>
+        <li><a href="" data-toggle="dropdown" class="paddtd" aria-expanded="true">
+            <h4 class="inline">Team</h4>
+            <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+            <li><a href="课程主页.html">课程控制面板</a></li>
+            <li><a href="Coursera个人课程首页（课程）.html">个人资料</a></li>
+            <li><a href="Coursera个人课程首页（成就）.html">成就</a></li>
+            <li><a href="#">设置</a></li>
+            <li><a href="#">签名追踪</a></li>
+            <li><a href="#">退出</a></li>
+        </ul></li>
+    </ul>
+</nav>
+
+<!--左侧-->
+<div class="row">
+    <div class="leftstyle textwhite yincang col-md-3">
+        <br>
+        <a href="课程主页.html" ><img class="leftimg img-circle" src="images/logo2.png " style="position: relative;right: -37%;" alt="univlogo"></a>
+        <h4 class="center">如何学习：学习困难科目的实用思维方法</h4>
+        <h6 class="center">由洛阳师范学院提供</h6>
+        <br>
+        <div>
+        </div>
+            <div class="navbar navbar-collapse" id="y">
+                <ul class="nav">
+                    <li>
+                        <a class="" href="课程主页.html">
+                            <span class="glyphicon glyphicon-home  textwhite">&nbsp;课程主页</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#zuoc" data-toggle="collapse">
+                            <span class="glyphicon glyphicon-list textwhite">&nbsp;课程内容</span>
+                        </a>
+                        <ul id="zuoc" class="nav collapse">
+                            <li class="biankuang"><a href="课程内容.html"class="textwhite">&nbsp;第1周</a> </li>
+                            <li class="biankuang"><a href="课程内容.html"class="textwhite">&nbsp;第2周</a> </li>
+                            <li class="biankuang"><a href="课程内容.html"class="textwhite">&nbsp;第3周</a> </li>
+                            <li class="biankuang disabled"><a href=""class="textwhite"><span class="flol glyphicon glyphicon-lock "></span>&nbsp;第4周</a> </li>
+                            <li class="biankuang disabled"><a href=""class="textwhite"><span class="flol glyphicon glyphicon-lock "></span>&nbsp;Further Exploration and Resources </a></li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a class=" " href="课程讨论.html">
+                            <span class="glyphicon glyphicon-comment textwhite">&nbsp;讨论</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="">
+                            <span class="glyphicon glyphicon-info-sign  textwhite">&nbsp;课程信息</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    </div>
+<!--中间-->
+    <div class="page_min col-md-9">
+        <div class="bjtp tp">
+            <h5>美国加州大学圣地亚哥分校</h5>
+            <h1><strong>如何学习：学习困难科目的实用思维方法</strong></h1>
+
+        </div>
+        <hr/>
+
+        <!--右部分内容-->
+        <div class="pianyi">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="panel panel-default"style="margin-left: 30px">
+                        <div class="panel-heading">课程概述</div>
+                        <div class="panel-body">
+                            <p class="p1">这门课程让你轻松地接触到艺术、音乐、文学、数学、科学、体育和许多其他学科所使用的宝贵的学习技巧。我们要了解大脑如何利用两种不同的学习方式以及如何封装（“块”）的信息。我们还将包括学习记忆、记忆技巧、处理拖延的方法和研究最有效的方法，以帮助你掌握困难的学科。</p>
+                            <p class="p1">使用这些方法，无论你想掌握什么你的技能水平，你可以改变你的想法和改变你的生活。如果你已经是一个专家，这窥视下心理罩将给你增压器成功学习的想法，包括反直觉的应试技巧和见解，这将帮助你充分利用你的时间做作业和习题。如果你努力，你会看到一个结构化的宝库的实用技术，你需要做些什么才能走上正轨。如果你想在任何事情上变得更好，这门课程将有助于你的指导。</p>
+                            <p class="p1">本课程也可在葡萄牙语中使用。要加入完全翻译的葡萄牙语版本，访问此页: https://www.coursera.org/learn/aprender</p>
+                            <p class="small"><span class="glyphicon glyphicon-globe"></span>&nbsp;Subtitles available in <b>英语, 葡萄牙语, 西班牙语, 乌克兰语 </b><br/>
+                                <span class="glyphicon glyphicon-dashboard"></span>&nbsp;4小时视频，3小时作业，3小时附加资料</p>
+                        </div>
+                    </div>
+                    <div class="panel panel-default"style="margin-left: 30px">
+                        <div class="panel-heading">授课教师</div>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object img-circle" src="images/teacher1.jpg" alt="teacher1">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">巴巴拉奥克利博士</h4>
+                                <p>工程教授 <br/>
+                                    奥克兰大学工业与系统工程</p>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object img-circle" src="images/teacher2.jpg" alt="teacher2">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">泰伦斯博士Sejnowski</h4>
+                                <p>在索尔克生物学研究所教授弗兰西斯克里克计算神经生物学实验室</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="panel panel-default"style="margin-left: 30px">
+                        <div class="panel-heading"> 教 学 大 纲 </div>
+                        <div class="panel-body">
+                            <div class="xbt">
+                                <span>第一周</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 什么是学习？
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>聚焦与发散思维</li>
+                                    <li>拖延，记忆和睡眠</li>
+                                    <li>总结</li>
+                                    <li>回顾</li>
+                                    <li>可选的进一步阅读</li>
+                                    <li>可选的访问和可选的分配</li>
+                                </ul>
+                            </div>
+                            <div class="ceyan"><p>小测验：什么是学习？</p></div>
+                            <div class="xbt">
+                                <span>第二周</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 什么是学习？
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>聚焦与发散思维</li>
+                                    <li>拖延，记忆和睡眠</li>
+                                    <li>总结</li>
+                                    <li>回顾</li>
+                                    <li>可选的进一步阅读</li>
+                                    <li>可选的访问和可选的分配</li>
+                                </ul>
+                            </div>
+                            <div class="ceyan"><p>小测验：什么是学习？</p></div>
+                            <div class="xbt">
+                                <span>第三周</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 什么是学习？
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>聚焦与发散思维</li>
+                                    <li>拖延，记忆和睡眠</li>
+                                    <li>总结</li>
+                                    <li>回顾</li>
+                                    <li>可选的进一步阅读</li>
+                                    <li>可选的访问和可选的分配</li>
+                                </ul>
+                            </div>
+                            <div class="ceyan"><p>小测验：什么是学习？</p></div>
+                            <div class="xbt">
+                                <span>第四周</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 什么是学习？
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>聚焦与发散思维</li>
+                                    <li>拖延，记忆和睡眠</li>
+                                    <li>总结</li>
+                                    <li>回顾</li>
+                                    <li>可选的进一步阅读</li>
+                                    <li>可选的访问和可选的分配</li>
+                                </ul>
+                            </div>
+                            <div class="ceyan"><p>小测验：什么是学习？</p></div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default"style="margin-left: 30px">
+                        <div class="panel-heading">如何通过课程</div>
+                        <div class="panel-body">通过所有等级的作业来完成课程。<br/>在截止日期之后，你仍然可以通过一项任务，但20%的逾期罚款将被应用。</div>
+                    </div>
+                </div>
+
+
+                <!--最右侧部分-->
+                <div class="col-sm-4">
+                    <div class="panel panel-default youce">
+                        <div><p class="small">即将召开的会议：</p></div>
+                        <div><p class="p2 tp">8月10日 – 9月14日</p></div>
+                        <div><p>4周的学习</p></div>
+                        <div><p class="small p3">15天直到会议开始</p></div>
+                        <div class="p3"><a href="#" type="button" class="disabled btn btn-default"> 报 名 </a></div>
+                    </div>
+                    <div class="panel panel-default youce">
+                        <div><p class="p2 tp">可向学生提供证书</p></div>
+                        <div class="tp"><a href="#"><img src="images/you_ce_logo.png" alt="证书"/></a></div>
+                        <div><p class="small tp">完成此课程并展示你的成功与证书是可信的，安全的和发行的Coursera。</p></div>
+                        <div class="tp"><a href="#">了解更多关于证书的信息 <span class="glyphicon glyphicon-chevron-right"></span></a></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!--帮助中心-->
+    <div class="bzzx">
+        <button class="btn btn-primary">帮 助 中 心</button>
+
+    </div>
+
+</div>
+</body>
+</html>

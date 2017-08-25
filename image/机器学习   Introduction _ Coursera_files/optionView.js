@@ -1,0 +1,1 @@
+"use strict";define("bundles/assess/questionTypes/optionBase/student/nls/zh/optionView",{"Sorry, that's incorrect.&nbsp;":"对不起，您的答案不正确。&nbsp;","Well done!&nbsp;":"真棒！&nbsp;"});

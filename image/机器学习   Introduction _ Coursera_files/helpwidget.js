@@ -1,0 +1,1 @@
+"use strict";define("pages/open-course/common/views/nls/zh/helpwidget",{"Help Center":"帮助中心"});

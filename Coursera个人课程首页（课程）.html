@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coursera用户首页</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <script type="application/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="application/javascript" src="js/bootstrap.min.js"></script>
+    <style type="text/css">
+        body{
+            background-color:#f5f5f5 ;
+        }
+        .container{
+            border-width: 1px;
+            border-bottom-style: solid;
+            border-bottom-color: #bfbfbf;
+        }
+        a{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style:none;
+            margin-top: 10px;
+        }
+        li a{
+            color:#808080 ;
+        }
+        #dingbu{
+            border-style:solid;
+            border-bottom-color: #bfbfbf;
+        }
+        #dingbu a{
+            color: #9b9b9b
+        }
+        .center{
+            margin-top: 100px;
+        }
+        @media (max-width: 768px) {
+            #aa{
+                display: none;
+            }
+        }
+        .dangqian{
+            width: 730px;
+            height: 160px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #bfbfbf;
+            background-color: #ffffff;
+        }
+        .yiguidang{
+            color: #bfbfbf;
+            width: 730px;
+            height: 160px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #bfbfbf;
+            background-color: #ffffff;
+        }
+        .jijiangkaishi{
+            color: #bfbfbf;
+            width: 730px;
+            height: 160px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #bfbfbf;
+            background-color: #ffffff;
+        }
+        .shoucang{
+            color: #bfbfbf;
+            width: 730px;
+            height: 160px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #bfbfbf;
+            background-color: #ffffff;
+        }
+
+        #jixu{
+            width: 250px;
+            float: right;
+        }
+
+        .explore{
+        }
+        #explore_z{
+            background-color: #1b6d85;
+            padding-bottom: 8px;
+        }
+        #explore_y img{
+             width: 64px;
+            height: 64px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <nav class="navbar navbar-fixed-top" id="dingbu" style="background-color: #ffffff">
+        <div class="row">
+            <div class=" col-md-3 col-md-offset-1">
+                <div class="navbar-header" >
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">菜单
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="首页.html" style="padding-top: 5px"><img src="images/logo.png" alt=""/></a>
+                </div>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <div class="col-md-4 col-sm-4">
+                    <div class="input-group " style="margin-top: 10px">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"onclick="window.location.href='选课目录.html';"><span class="glyphicon glyphicon-th-list"></span>目录</button>
+                        </span>
+                        <input type="text" class="form-control" placeholder="搜索目录...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">合作伙伴</a></li>
+                        <li><a href="" class="dropdown-toggle" data-toggle="dropdown">王泽宇
+                            <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="课程主页.html">课程控制面板</a></li>
+                                <li><a href="Coursera个人课程首页（课程）.html">个人资料</a></li>
+                                <li><a href="Coursera个人课程首页（成就）.html">成就</a></li>
+                                <li><a href="">设置</a></li>
+                                <li><a href="">Signature Track</a></li>
+                                <li><a href="">退出</a></li>
+                            </ul></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+<!--中部-->
+<div class="center row">
+    <div class="col-md-3">
+        <ul class="nav nav-pills nav-stacked">
+            <li class="active"><a href="Coursera个人课程首页（课程）.html">课程</a></li>
+            <li><a href="Coursera个人课程首页（成就）.html">成就</a></li>
+        </ul>
+    </div>
+    <div class="col-md-9">
+        <div>
+            <div>
+                <h2>我的课程</h2>
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#pan1" data-toggle="tab">当前</a></li>
+                    <li><a href="#pan2" data-toggle="tab">已归档</a></li>
+                    <li><a href="#pan3" data-toggle="tab">即将开始</a></li>
+                    <li><a href="#pan4" data-toggle="tab">收藏</a></li>
+
+                </ul>
+                <div class="tab-content row">
+                    <div class="dangqian tab-pane active col-md-4" id="pan1">
+                        <img src="images/jiqq.png" alt="" class="pull-left"style="margin-top: 15px" id="aa"/>
+                        <div class="col-md-8">
+                        <div>
+                            <h5><a href="">斯坦福大学</a></h5>
+                            <h4><a href="">机器学习</a></h4>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-success"id="jixu">继续</button>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="tab-pane fade in" id="pan2">
+                        <div class="yiguidang">
+                            <h5 style="text-align: center">您还没有注册任何课程。</h5>
+                            <button type="button" class="btn btn-danger" style="margin-left: 310px">搜索一门课程</button>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pan3">
+                        <div class="jijiangkaishi">
+                            <h5 style="text-align: center">您还没有注册任何课程。</h5>
+                            <button type="button" class="btn btn-danger" style="margin-left: 310px">搜索一门课程</button>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pan4">
+                        <div class="shoucang">
+                            <h5 style="text-align: center">您还没有收藏任何课程。</h5>
+                            <button type="button" class="btn btn-danger" style="margin-left: 310px">搜索一门课程</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <br/>
+        <div class="zuijinchakan">
+            <h2>最近查看</h2>
+            <div class="row">
+                <div class=" col-md-4">
+                    <div class="thumbnail">
+                        <a href="Python课程简介.html">
+                            <img src="images/kecheng1.jpg" alt="..." class="img-responsive">
+                            <div class="caption">
+                                <h4>项目管理：成功的基础</h4>
+                                <p>加州大学尔湾分校</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class=" col-md-4">
+                    <div class="thumbnail">
+                        <a href="Python课程简介.html">
+                            <img src="images/kecheng2.jpg" alt="...">
+                            <div class="caption">
+                                <h4>实用机器学习</h4>
+                                <p>约翰霍普金斯大学</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class=" col-md-4">
+                    <div class="thumbnail">
+                        <a href="Python课程简介.html">
+                            <img src="images/kecheng3.png" alt="...">
+                            <div class="caption">
+                                <h4>Python交互编程入门</h4>
+                                <p>莱斯大学</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="explore row">
+            <h2>Explore!</h2>
+            <div class="col-md-5" id="explore_z">
+                <h2 style="color: #ffffff">提供的证书</h2>
+                <p style="color: #ffffff">完成课程后使用证书展示学习成果</p>
+                <button type="button" class="btn btn-warning">查看全部</button>
+            </div>
+            <div class="col-md-7" id="explore_y">
+                <div class="list-group row">
+                    <a href="#" class="list-group-item" style="height: 102px">
+                        <div class="list-group-item-heading col-md-3"><img src="images/zhuanxiang1.jpg" alt=""/></div>
+                        <div class="col-md-8">
+                            <p>xx</p>
+                            <h4>xxxxxx</h4>
+                            <p>xx</p>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item" style="height: 102px">
+                        <div class="list-group-item-heading col-md-3"><img src="images/zhuanxiang2.png" alt=""/></div>
+                        <div class="col-md-8">
+                            <p>xx</p>
+                            <h4>xxxxxx</h4>
+                            <p>xx</p>
+                        </div>
+                    </a><a href="#" class="list-group-item" style="height: 102px">
+                    <div class="list-group-item-heading col-md-3"><img src="images/zhuanxiang3.png" alt=""/></div>
+                    <div class="col-md-8">
+                        <p>xx</p>
+                        <h4>xxxxxx</h4>
+                        <p>xx</p>
+                    </div>
+                </a><a href="#" class="list-group-item" style="height: 102px">
+                    <div class="list-group-item-heading col-md-3"><img src="images/zhuanxiang4.jpg" alt=""/></div>
+                    <div class="col-md-8">
+                        <p>xx</p>
+                        <h4>xxxxxx</h4>
+                        <p>xx</p>
+                    </div>
+                </a><a href="#" class="list-group-item" style="height: 102px">
+                    <div class="list-group-item-heading col-md-3"><img src="images/zhuanxiang5.png" alt=""/></div>
+                    <div class="col-md-8">
+                        <p>xx</p>
+                        <h4>xxxxxx</h4>
+                        <p>xx</p>
+                    </div>
+                </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--底部-->
+    <hr/>
+    <div class="dibu row" style="background-color: #ffffff">
+        <div class="col-md-5">
+            <img src="images/logo.png" alt=""/>
+            <div style="margin-left: 22px ">
+                <p>Coursera致力于普及全世界最好的教育，它与全球一流大学和机构合作，向所有人提供免费的在线课程。</p>
+                <p>© 2015 Coursera Inc. 版权所有 - 沪ICP备15025210号</p>
+                <br/>
+                <img src="images/App.png" alt=""/>
+                <a href="">Get it on Google Play</a>
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div class=" row">
+                <div class="col-md-3 col-xs-6">
+                    <ul>
+                        <h4>公司</h4>
+                        <li><a href="">关于</a></li>
+                        <li><a href="">团队</a></li>
+                        <li><a href="">管理团队</a></li>
+                        <li><a href="">工作机会</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <ul>
+                        <h4>朋友</h4>
+                        <li><a href="">合作伙伴</a></li>
+                        <li><a href="">社区</a></li>
+                        <li><a href="">合作项目</a></li>
+                        <li><a href="">开发者</a></li>
+                        <li><a href="">翻译</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <ul>
+                        <h4>联系我们</h4>
+                        <li><a href="">Google+</a></li>
+                        <li><a href="">Twitter</a></li>
+                        <li><a href="">Facebook</a></li>
+                        <li><a href="">博客</a></li>
+                        <li><a href="">技术博客</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <ul>
+                        <h4>更多</h4>
+                        <li><a href="">条款</a></li>
+                        <li><a href="">隐私</a></li>
+                        <li><a href="">帮助</a></li>
+                        <li><a href="">媒体</a></li>
+                        <li><a href="">联系我们</a></li>
+                        <li><a href="">目录</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

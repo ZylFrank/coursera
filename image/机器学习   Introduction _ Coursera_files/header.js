@@ -1,0 +1,1 @@
+"use strict";define("pages/open-course/item/views/nls/zh/header",{Guest:"访客","Log In":"登录","Navigation closed":"导航关闭","Navigation open":"导航开始","Sign Up":"注册","Toggle navigation":"切换导航"});

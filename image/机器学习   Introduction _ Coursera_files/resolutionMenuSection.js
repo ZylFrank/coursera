@@ -1,0 +1,1 @@
+"use strict";define("bundles/videojs/layout/nls/zh/resolutionMenuSection",{High:"高清",Low:"流畅",Medium:"标准","Video Quality":"视频质量"});

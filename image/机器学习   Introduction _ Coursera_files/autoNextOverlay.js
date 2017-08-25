@@ -1,0 +1,1 @@
+"use strict";define("pages/open-course/video/util/nls/zh/autoNextOverlay",{"#{hours}h #{minutes}m":"#{hours} 小时 #{minutes} 分","#{minutes} min":"#{minutes} 分","#{seconds} sec":"#{seconds} 秒","NEXT UP:":"下一项：","Navigation closed":"导航关闭","Navigation open":"导航开始","Starting in":"开始于","Toggle navigation":"切换导航"});

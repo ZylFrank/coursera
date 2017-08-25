@@ -1,0 +1,1 @@
+"use strict";define("bundles/assess/questionTypes/reflect/student/nls/zh/template",{"Well done!&nbsp;":"真棒！&nbsp;","What do you think?":"您觉得怎么样？"});

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>How to learn</title>
+
+    <script type="application/javascript" src="js/jquery-1.11.1.min.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <script type="application/javascript" src="js/bootstrap.min.js"></script>
+    <style>
+        /*导航部分*/
+        #nav1>a{
+            color: #8c8c8c;
+        }
+        #nav1>a:hover{
+            color: #000000;
+            text-decoration: none;
+        }
+        .dbj{
+            margin-top: 80px;
+            margin-bottom: 20px;
+        }
+
+        @media screen and (max-width: 768px){
+            .dbj{
+                display: none;
+            }
+            .db{
+                display: none;
+            }
+        }
+        /*左右按钮*/
+        .btn1{
+            width: 50px;
+            height: 80px;
+            display: block;
+            line-height: 62px;
+            font-size: 25px;
+            text-align: center;
+            background-color: rgba(94, 94, 94, 0.3);
+
+        }
+        .btn2{
+            position: fixed;
+            top:45%;
+            left:auto;
+        }
+        .btn3{
+            position: fixed;
+            top: 45%;
+            right: 0;
+        }
+        /*帮助中心*/
+        .btn4{
+            /*transform: rotate(90deg);
+            transform-origin: right top 0px;
+            top: 15em;
+            right: -2px;*/
+            width: 20px;
+            line-height: 24px;
+            position: fixed;
+            top: 30%;
+            right: 20px;
+        }
+        /*视频部分*/
+        #heise{
+            padding-top: 24px;
+            width: 100%;
+            background-color:rgba(0, 0, 0, 0.87);
+        }
+        .p1{
+            text-indent: 30px;
+            font-size: 24px;
+            color: #f7f7f7;
+        }
+        /*下载部分*/
+        .table tr{
+            text-indent: 30px;
+            font-size: 18px;
+            height: 50px;
+            line-height: 55px;
+            padding: 18px 12px;
+        }
+        .yanse{
+            color: rgba(214, 214, 214, 0.83);
+        }
+        .xiazai{
+            margin-bottom: 50px;
+        }
+    </style>
+
+</head>
+<body>
+<!--第一导航-->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav2" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div class="navbar-brand" id="nav1">
+                <a href="课程内容.html">
+                    <p><span class="glyphicon glyphicon-arrow-left"></span> &nbsp;学习困难科目的实用思维方法</p>
+                </a>
+        </div>
+    </div>
+    <div class="collapse navbar-collapse" id="nav2">
+        <ul class="nav navbar-nav navbar-right">
+            <li class="small"><a href="#">合作伙伴</a></li>
+            <li class="small"><a href="#">登录</a></li>
+            <li class="small"><a href="#">注册 &nbsp;</a></li>
+        </ul>
+    </div>
+    </div>
+</nav>
+<!--第二导航-->
+
+<div class="container dbj">
+    <div class="row">
+        <div class="col-md-4">
+            <p>您的课程开始于8月10日</p>
+        </div>
+        <div class="col-md-7"></div>
+        <div class="col-md-1">
+            <button class="btn btn-default" disabled="disabled"> 报 &nbsp;名 </button>
+        </div>
+
+    </div>
+</div>
+<!--左右按钮-->
+<div class="btn1 btn2">
+    <a href="#"><span class="glyphicon glyphicon-chevron-left"></span></a>
+</div>
+<div class="btn1 btn3">
+    <a><span class="glyphicon glyphicon-chevron-right"></span></a>
+</div>
+<!--帮助中心-->
+<div class="btn4 db">
+    <button class="btn btn-primary"><span>帮<br/>助<br/>中<br/>心</span></button>
+
+</div>
+
+<!--视频部分-->
+<div id="heise">
+    <div class="container">
+        <div >
+            <video width="100%" poster autoplay="autoplay" preload="none" controls="controls"><source src="video/index.mp4"></video>
+            
+        </div>
+        <div>
+            <p class="p1">介绍聚焦与扩散模式</p>
+        </div>
+    </div>
+
+
+</div>
+<!--下载部分-->
+<div class="container xiazai">
+    <div class="panel">
+        <div class="panel-heading"><h3>下载</h3></div>
+            <div >
+                <table class="table table-responsive table-bordered table-hover">
+                    <tr>
+                        <td><a href="#">演讲视频 <span class="small yanse">mp4</span></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">字幕下载（英文）<span class="small yanse">webVTT</span></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">成绩单（英文）<span class="small yanse">txt</span></a></td>
+                    </tr>
+                </table>
+        </div>
+    </div>
+    
+</div>
+<br/>
+
+
+
+
+</body>
+<script src="js_file/my_js.js"></script>
+<script src="./js/jquery-1.11.1.min.js"></script>
+<script src="./js_file/video.js"></script>
+<script src="js_file/plugins.js"></script>
+</html>

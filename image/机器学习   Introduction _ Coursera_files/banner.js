@@ -1,0 +1,1 @@
+"use strict";define("pages/open-course/enroll/views/nls/zh/banner",{Enroll:"注册","Enroll today to keep track of your progress, get help with your coursework, and learn more!":"注册后您就可以跟踪学习进展，获得课程作业帮助，而且能学习更多内容！"});

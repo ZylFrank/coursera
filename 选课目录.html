@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>选课目录</title>
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="hp-css.css"/>
+    <script type="application/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="application/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<!--头部导航-->
+<nav class="navbar navbar-default">
+    <div class="container-fluid"style="background-color: #ffffff">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="首页.html"><img src="images/logo.png" alt="" class="img-responsive" style="margin-top: -10px"/></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="首页.html"><span class=" glyphicon glyphicon-home"></span></a></li>
+                <li><a href="#">合作伙伴</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><label
+                            >BU-JIANG-JIU</label> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="课程主页.html">课程控制面板</a></li>
+                        <li><a href="Coursera个人课程首页（课程）.html">个人资料</a></li>
+                        <li><a href="Coursera个人课程首页（成就）.html">成就</a></li>
+                        <li><a href="#">设置</a></li>
+                        <li><a href="#">签名追踪</a></li>
+                        <li><a href="#">退出</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </div>
+</nav>
+<div class="">
+<!--搜索框-->
+<div class="container">
+    <form class="navbar-form navbar-left" role="search" style="margin-top: -5px">
+
+        <div class="input-group" >
+            <input type="text" class="form-control input-lg" placeholder="搜索"  >
+                    <span class="input-group-addon">
+                        <a href="">
+                            <span class="glyphicon glyphicon-search"></span></a></span>
+        </div>
+
+    </form>
+
+</div>
+    <hr/>
+    <!--内容-->
+    <div class="container" style="border-left: solid 1px #bacadd;border-bottom: solid 1px #bacadd;border-right: solid 1px #bacadd;border-top: solid 1px #bacadd ">
+<div class="row">
+            <div class="col-md-3" id="sidebar3" >
+               <!-- <div class="checkbox container" >-->
+
+                       <p><input type="checkbox"/>自选课程 <span style="float: right">188</span></p>
+                        <h5><b>符合条件</b></h5>
+                        <p><input type="checkbox"/>认证证书<span style="float: right">188</span></p>
+                        <p><input type="checkbox"/>专项课程<span style="float: right">188</span></p>
+
+
+
+
+
+                        <p><input type="checkbox"  id="handle"/><b>所有类别</b></p>
+                        <div id="div1">
+                        <p><input type="checkbox" class="toggle"/>艺术<span style="float: right">188</span></p>
+                        <p><input type="checkbox" class="toggle"/>生命科学<span style="float: right">188</span></p>
+                        <p><input type="checkbox" class="toggle"/>商业和管理<span style="float: right">188</span></p>
+                        <p><input type="checkbox" class="toggle"/>化学<span style="float: right">188</span></p>
+                        <p><input type="checkbox"class="toggle"/>计算机科学：人工智能<span style="float: right">188</span></p>
+                        <p><input type="checkbox"class="toggle"/>计算机科学：软件工程<span style="float: right">188</span></p>
+                        <p><input type="checkbox"class="toggle"/>计算机科学：系统与安全<span style="float: right">188</span></p>
+                        <p><input type="checkbox"class="toggle"/>计算机科学：理论<span style="float: right">188</span></p>
+                        <p><input type="checkbox"class="toggle"/>经济和金融<span style="float: right">188</span></p>
+                        <p><input type="checkbox"class="toggle"/>教育学<span style="float: right">188</span></p>
+                        <p><input type="checkbox"class="toggle"/>能源和地球科学<span style="float: right">188</span></p>
+                        <p><input type="checkbox"class="toggle"/>工程师<span style="float: right">188</span></p>
+                        <p><input type="checkbox"class="toggle"/>食物和营养学<span style="float: right">188</span></p>
+                        <p><input type="checkbox"class="toggle"/>健康和社会<span style="float: right">188</span></p>
+                        <p><input type="checkbox"class="toggle"/>Humanities<span style="float: right">188</span></p>
+                        <p><input type="checkbox"class="toggle"/>法律<span style="float: right">188</span></p>
+                        <p><input type="checkbox"class="toggle"/>数学<span style="float: right">188</span></p>
+                        <p><input type="checkbox"class="toggle"/>医学<span style="float: right">188</span></p>
+                        <p><input type="checkbox"class="toggle"/>音乐、电影和音频<span style="float: right">188</span></p>
+                        <p><input type="checkbox"class="toggle"/>物理和地球科学<span style="float: right">188</span></p>
+                        <p><input type="checkbox"class="toggle"/> 物理<span style="float: right">188</span></p>
+                        <p><input type="checkbox"class="toggle"/>  社会科学<span style="float: right">188</span></p>
+                        <p><input type="checkbox"class="toggle"/> 统计和数据分析<span style="float: right">188</span></p>
+                        <p><input type="checkbox"class="toggle"/> 教师专业发展<span style="float: right">188</span></p>
+                        </div>
+
+
+
+
+
+
+
+
+
+                </div>
+
+
+            <div class="col-md-9">
+                <div class="row"style="border-right: solid 1px #bacadd;border-left-style: solid;border-left-color: #bacadd;border-left-width: thin; border-bottom: solid 1px #bacadd ">
+                    <h1>课程</h1>
+                    <hr style="margin-top: -5px"/>
+                    <div class="row">
+                        <div class="col-sm-3 "><a href=""><img src="image/1.png" alt="" class="img-responsive"/></a>
+                        </div>
+                        <div class="col-md-6 col-md-pull-1"><p>斯坦福大学 <br/><a href="Coursera个人课程首页（课程）.html">机器学习</a><br/>授课教师 Andrew Ng</p></div>
+                        <div class="col-md-2" id="sidebar2"><a href="Coursera个人课程首页（课程）.html"><button class="btn btn-success">查看课程</button></a></div>
+                    </div>
+                    <hr/>
+                    <div class="row ">
+                        <div class="col-sm-3"><a href=""><img src="image/2.png" alt="" style="border: solid 1px #bacadd "/></a>
+                        </div>
+                        <div class="col-md-6 col-md-pull-1"><p>美国加州大学圣地亚哥分校 <br/><a href="">如何学习：学习困难的科目的实用思维方法</a><br/>授课教师 Dr.Barbara Oakley &Dr.Terrence Sejnowski</p></div>
+                        <div class="col-md-2" id="sidebar2"><a href=""><button class="btn btn-success">查看课程</button></a>
+                           <div style="padding-top: 10px;margin-left: 30px" > <a href=""><button class="btn btn-default btn-xs">认证 证书</button></a></div></div>
+                    </div>
+                    <hr/>
+                    <div class="row ">
+                        <div class="col-sm-3"><a href=""><img src="image/3.jpg" alt="" style="border: solid 1px #bacadd "/></a>
+                        </div>
+                        <div class="col-md-6 col-md-pull-1"><p> 约翰霍普金斯大学<br/><a href="">R语言程序开发（中文版）</a><br/>授课教师 Dr.Barbara Oakley &Dr.Terrence Sejnowski</p></div>
+                        <div class="col-md-2" id="sidebar2"><a href=""><p>2015年8月3日 <br/>4个星期</p></a>
+                            <div style="padding-top: 10px;margin-left: 30px" > <a href=""><button class="btn btn-default btn-xs">认证 证书</button></a></div></div>
+                    </div>
+                    <hr/>
+                    <div class="row ">
+                        <div class="col-sm-3"><a href=""><img src="image/4.png" alt="" style="border: solid 1px #bacadd "/></a>
+                        </div>
+                        <div class="col-md-6 col-md-pull-1"><p>莱斯大学 <br/><a href="">Python交互编程入门</a><br/>授课教师 Dr.Barbara Oakley &Dr.Terrence Sejnowski</p></div>
+                        <div class="col-md-2" id="sidebar2"><a href=""><p style="">2015年8月3日 <br/>4个星期</p></a> <div style="padding-top: 10px;margin-left: 30px" > <a href=""><button class="btn btn-default btn-xs">认证 证书</button></a></div></div>
+                    </div>
+                    <hr/>
+                    <div class="row ">
+                        <div class="col-sm-3"><a href=""><img src="image/6.jpg" alt="" style="border: solid 1px #bacadd "/></a>
+                        </div>
+                        <div class="col-md-6 col-md-pull-1"><p>密歇根大学 <br/><a href="">成功的谈判：基础策略与技巧</a><br/>授课教师 Dr.Barbara Oakley &Dr.Terrence Sejnowski</p></div>
+                        <div class="col-md-2" id="sidebar2"><a href=""><p style="">2015年8月3日 <br/>4个星期</p></a> <div style="padding-top: 10px;margin-left: 30px" > <a href=""><button class="btn btn-default btn-xs">认证 证书</button></a></div></div>
+                    </div>
+                    <hr/>
+                    <div class="row ">
+                        <div class="col-sm-3"><a href=""><img src="image/5.jpg" alt="" style="border: solid 1px #bacadd "/></a>
+                        </div>
+                        <div class="col-md-6 col-md-pull-1"><p>约翰霍普金斯大学 <br/><a href="">数据科学的工具箱（中文版）</a><br/>授课教师 Dr.Barbara Oakley &Dr.Terrence Sejnowski</p></div>
+                        <div class="col-md-2" id="sidebar2"><a href=""><p style="">2015年8月3日 <br/>4个星期</p></a> <div style="padding-top: 10px;margin-left: 30px" > <a href=""><button class="btn btn-default btn-xs">认证 证书</button></a></div></div>
+                    </div>
+                    <hr/>
+                    <div class="row ">
+                        <div class="col-sm-3"><a href=""><img src="image/7.jpg" alt="" style="border: solid 1px #bacadd "/></a>
+                        </div>
+                        <div class="col-md-6 col-md-pull-1"><p>华盛顿大学 <br/><a href="">演讲概论</a><br/>授课教师 Dr.Barbara Oakley &Dr.Terrence Sejnowski</p></div>
+                        <div class="col-md-2" id="sidebar2"><a href=""><p style="">2015年8月3日 <br/>4个星期</p></a></p> <div style="padding-top: 10px;margin-left: 30px" > <a href=""><button class="btn btn-default btn-xs">认证 证书</button></a></div>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div class="row ">
+                        <div class="col-sm-3"><a href=""><img src="image/8.jpg" alt="" style="border: solid 1px #bacadd "/></a>
+                        </div>
+                        <div class="col-md-6 col-md-pull-1"><p>加州大学尔湾分校 <br/><a href="">更聪明而非更辛苦的工作：个人时间管理及工作效率</a><br/>授课教师 Dr.Barbara Oakley &Dr.Terrence Sejnowski</p></div>
+                        <div class="col-md-2" id="sidebar2"><a href=""><p style="">2015年8月3日 <br/>4个星期</p></a> <div style="padding-top: 10px;margin-left: 30px" > <a href=""><button class="btn btn-default btn-xs">认证 证书</button></a></div></div>
+                    </div>
+                    <hr/>
+                    <div class="row ">
+                        <div class="col-sm-3"><a href=""><img src="image/10.png" alt="" style="border: solid 1px #bacadd "/></a>
+                        </div>
+                        <div class="col-md-6 col-md-pull-1"><p>卫斯连大学 <br/><a href="">社会心理学</a><br/>授课教师 Dr.Barbara Oakley &Dr.Terrence Sejnowski</p></div>
+                        <div class="col-md-2" id="sidebar2"><a href=""><p style="">2015年8月3日 <br/>4个星期</p></a> <div style="padding-top: 10px;margin-left: 30px" > <a href=""><button class="btn btn-default btn-xs">认证 证书</button></a></div></div>
+                    </div>
+                    <hr/>
+                    <div class="row ">
+                        <div class="col-sm-3"><a href=""><img src="image/9.jpg" alt="" style="border: solid 1px #bacadd "/></a>
+                        </div>
+                        <div class="col-md-6 col-md-pull-1"><p>加州大学尔湾分校 <br/><a href="">项目管理：成功的基础</a><br/>授课教师 Dr.Barbara Oakley &Dr.Terrence Sejnowski</p></div>
+                        <div class="col-md-2" id="sidebar2"><a href=""><p style="">2015年8月3日 <br/>4个星期</p></a> <div style="padding-top: 10px;margin-left: 30px" > <a href=""><button class="btn btn-default btn-xs">认证 证书</button></a></div></div>
+                    </div>
+                    <hr/>
+                    <div class="row ">
+                        <div class="col-sm-3"><a href=""><img src="image/13.png" alt="" style="border: solid 1px #bacadd "/></a>
+                        </div>
+                        <div class="col-md-6 col-md-pull-1"><p> 马里兰大学帕克分校<br/><a href="">Android 手持系统的移动应用编程：第1部分</a><br/>授课教师 Dr.Barbara Oakley &Dr.Terrence Sejnowski</p></div>
+                        <div class="col-md-2" id="sidebar2"><a href=""><p style="">2015年8月3日 <br/>4个星期</p></a> <div style="padding-top: 10px;margin-left: 30px" > <a href=""><button class="btn btn-default btn-xs">认证 证书</button></a></div></div>
+                </div>
+                    <hr/>
+                    <div class="row container ">
+                        <a href=""><p>载入更多课程>></p></a>
+                    </div>
+
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <hr/>
+    <div>
+        <div class="row container">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-3 col-md-offset-1"><a href="首页.html"><img src="images/logo2.png" alt="" class="img-responsive"/></a></div>
+                <div class="col-md-3 "style="margin-top: 20px"><a href="首页.html"><img src="images/logo.png" alt=""/></a></div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row container">
+                <div class="col-md-2"></div>
+                <div class="col-md-2 col-md-push-1"><a href=""><h4>关于我们</h4></a></div>
+                <div class="col-md-2 col-md-push-1"><a href=""><h4>合作伙伴</h4></a></div>
+                <div class="col-md-2 col-md-push-1"><a href=""><h4>联系我们</h4></a></div>
+                <div class="col-md-2 col-md-push-1"><a href=""><h4>更多</h4></a></div>
+                <div class="col-md-2"><a href=""><h4>帮助</h4></a></div>
+            </div>
+        </div>
+        <hr style="margin-top: -10px"/>
+        <div class="container">
+            <div class="col-md-4"></div>
+
+            <div class="col-md-4">© 2015 Coursera Inc. 版权所有 - 沪ICP备15025210号</div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+<script src="./js_file/my_js.js"></script>
+<script src="js/jquery-1.11.1.min.js"></script>
+</html>

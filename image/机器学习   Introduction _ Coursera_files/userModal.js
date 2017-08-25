@@ -1,0 +1,1 @@
+"use strict";define("bundles/userModal/views/nls/zh/userModal",{"Log In":"登录","Sign Up":"注册","Universal access to the world’s best education.":"我们致力于普及全世界最好的教育。"});

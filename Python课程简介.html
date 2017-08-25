@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Python课程简介</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script type="application/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="application/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style type="text/css">
+
+        @media screen and (min-width:768px){
+
+
+            .ff{
+                margin: 100px 0 0 100px
+            }
+        }
+        @media (max-width:768px) {
+            .gg{
+                position: relative;
+                right: -25%;
+            }
+            .tt{
+                display:none;
+            }
+        }
+        .row{
+            margin: 30px 10px;
+        }
+
+    </style>
+</head>
+<body>
+<!---头部-->
+<div class="row" style="margin-bottom: 0">
+
+    <nav class="navbar navbar-default navbar-fixed-top" style="background-color: #ffffff">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <!--logo -->
+            <div class="col-md-3 col-sm-3">
+                <div class="navbar-header navbar-right">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a  href="首页.html"><img src="images/logo.png"  /></a>
+                </div>
+            </div>
+
+            <!-- 搜索框 -->
+             <div class="col-md-4 col-md-offset-2 col-sm-5 tt">
+                <form class="navbar-form navbar-center" role="search">
+                    <div class="input-group" >
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"onclick="window.location.href='选课目录.html';"><span class="glyphicon glyphicon-list">&nbsp;目录</span></button>
+                        </span>
+                        <input type="text" class="form-control" placeholder="搜索目录">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                        </span>
+                    </div><!-- /input-group -->
+                </form>
+             </div>
+
+            <div class="col-md-3 col-sm-3 collapse navbar-collapse" id="collapse-1">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="#">合作伙伴</a></li>
+                    <li><a href="#">登录</a></li>
+                    <li><a href="#">注册</a></li>
+                </ul>
+            </div>
+        </div><!-- /.container-fluid -->
+    </nav>
+</div>
+
+
+<div class="container" style="border: solid 1px #c0c0c0;">
+    <div class="row" >
+        <div class="col-md-6">
+            <a href="#"><img src="img/R.png" alt=""/></a>
+                <h1>Python交互编程入门（第 2 部分）</h1>
+            <span>隶属于 <a href="#">计算机基础 专项课程 »</a></span>
+            <p>这两部分的课程设计是一个有趣的介绍python的编程的基础知识。我们的主要重点将是建立简单的互动游戏，如乒乓球，21点和小行星。</p>
+        </div>
+        <div class="col-md-6 col-xs-12"  >
+            <div>
+                <video style="height:255px;width:420px;"  poster="img/4.png" preload="none" controls="controls">
+                    <source src="video/index.mp4"/>
+                </video>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col-md-7">
+           <h2>课程概述</h2>
+            <p> 这两门课（这1部分是可用的）的目的是帮助很小或没有计算机背景的学习建立简单的互动应用基础的学生。我们选择的语言，Python，是一种简单易学，是用来在许多计算提供Coursera课程的高级计算机语言。为了使学习Python很容易，我们已经开发了一个基于浏览器的编程环境，使得Python简单地开发交互式应用程序。这些应用程序将涉及窗口，其内容是图形化的，并响应按钮，键盘和鼠标。</p>
+            <p>学习这门课程的主要方法是通过多个“小项目”在Python。为了使这门课有趣，这些项目将包括建筑有趣的游戏，如乒乓球，游戏，和小行星。当你已经完成了我们的课程，我们可以不承诺，你将成为一个专业的程序员，但我们认为，你会学到很多关于编程Python有乐趣，而你正在做它。</p>
+            <h2>授课大纲</h2>
+            <span>我们的课程大纲在 <a href="#">www.codeskulptor.org/coursera/interactivepython.html.</a></span>
+            <h2>先修知识</h2>
+            <p>要求高中数学知识。我们也强烈建议您已经完成了本课程的第一部分，在此过程中，因为我们假设在课堂上使用的图形用户界面系统的基本工作知识。</p>
+            <h2>授课形式</h2>
+            <p> 课程的后半部分将持续四周。每星期的讲座将集中在课程中列出的主题，而相关的每周的“迷你项目”将在实践中加强这些概念。这些小项目的成绩将通过同侪评估来确定。该类还将包括2周的小测验，以提供进一步的反馈。</p>
+            <h2>常见问题解答</h2>
+            <ul>
+                <li>
+                    <strong>完成这门课之后我会获得证书吗？</strong>
+                    <p>报名参加签名的学生将获得乔、史葛、和史蒂芬签署的证书。请注意，该类不提供一份成就感的学生没有参加签名的轨道。</p>
+                </li>
+                <li>
+                    <strong>这个班我需要什么资源？</strong>
+                    <p>类的唯一要求是访问一个现代网络浏览器。所有的编码和程序开发将在一个基于Web的编程环境，支持使用Python开发交互式应用程序做的。你创建的程序将被保存，通过云共享和分级。</p>
+                </li>
+                <li>
+                    <strong>如果我参加这个班，我会学到什么是最酷的东西?</strong>
+                    <p>你可以在Python中建立自己的游戏.</p>
+                </li>
+                <li>
+                    <strong>我可以在哪里学到更多的计算专业的基础知识？</strong>
+                    <p>你可以了解更多关于这个专业的 <a href="#">专业化的问题！</a></p>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-4 col-md-offset-1">
+
+            <h2>班次</h2>
+            <select class="form-control" id="select">
+                <option selected="selected" value="974687" id="sel1">
+                    2015年7月11日 - 2015年8月8日
+                </option>
+                <option value="975644" id="sel2">
+                    2015年8月29日 - 2015年9月27日
+                </option>
+                <option value="975646" id="sel3">
+                    2015年10月10日 - 2015年11月8日
+                </option>
+                <option value="future" id="last">
+                    后续班次
+                </option>
+            </select>
+            <div style="/*overflow: hidden;*/height: 30px">
+            <button type="button" id="btn1" class="btn btn-primary  col-xs-12" style="margin-top: 10px;"onclick="window.location.href='课程主页.html';">参加课程1</button>
+
+            </div>
+            <h2>课程特点</h2>
+            <a href="#">计算机基础 专项课程</a>
+            <p>认证证书</p>
+
+            <h2>课程简介</h2>
+            <p> <span class="glyphicon glyphicon-list-alt">&nbsp;4 weeks 课程长度</span></p>
+            <p> <span class="glyphicon glyphicon-time">&nbsp;7-10 小时/周</span></p>
+            <p><span class="glyphicon glyphicon-cd">&nbsp;英语</span></p>
+            <p><span class="glyphicon glyphicon-film">&nbsp;英语, Español & 中文 字幕</span></p>
+
+            <div style="border: solid 1px #c0c0c0;text-align: center ">
+                <h2>可向学生提供证书</h2>
+                <a href="#"><img src="img/cdp_cert_logo.png" alt=""/></a>
+                <p style="padding: 0 25px">完成此课程并展示你的成功与证书是可信的，安全的和发行的Coursera。</p>
+                <a href="#">了解更多关于证书的信息 <span class="glyphicon glyphicon-chevron-right"style="margin-bottom: 40px"></span></a>
+            </div>
+
+            <h2>教授</h2>
+            <div>
+                <a href="#"><img src="img/JWarren.jpg" alt=""class="img-circle"style="border: solid 4px #b9def0;margin: 3px 0"/></a>
+                <a href="#">张三</a>
+                <a href="#">莱斯大学</a>
+            </div>
+            <div>
+                <a href="#"><img src="img/SRixner.jpg" alt=""class="img-circle"style="border: solid 4px #b9def0;margin: 3px 0"/></a>
+                <a href="#">李四r</a>
+                <a href="#">莱斯大学</a>
+            </div>
+            <div>
+                <a href="#"><img src="img/John-Greiner.jpeg" alt=""class="img-circle"style="border: solid 4px #b9def0;margin: 3px 0"/></a>
+                <a href="#">王二</a>
+                <a href="#">莱斯大学</a>
+            </div>
+            <div>
+                <a href="#"><img src="img/SWong.jpg" alt=""class="img-circle"style="border: solid 4px #b9def0;margin: 3px 0"/></a>
+                <a href="#">杜拉拉</a>
+                <a href="#">莱斯大学</a>
+            </div>
+            <h2>课程类型</h2>
+            <a href="#">计算机科学：软件工程</a>
+            <h2>分享</h2>
+                <div class="row">
+                    <div class="col-md-6"><a href="#">Tweet</a></div>
+                    <div class="col-md-6"><a href="#"><img src="img/WeChat-button_20b.png" alt=""/></a></div>
+                </div>
+        </div>
+    </div>
+    <hr/>
+    <div>
+        <h2>相关课程</h2>
+        <div class="row" >
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail" style="border: none">
+                    <img src="img/y1.png" alt="" class="img-responsive" style="border: solid 1px #DDD"/>
+                   <h4  style="height: 40px"> Andr​​oid 手持系统的移动应用编程：第 1 部分</h4>
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail" style="border: none">
+                    <img src="img/y2.png" alt="" class="img-responsive" style="border: solid 1px #DDD">
+                    <h4 style="height: 40px">Andr​​oid 手持系统的移动应用编程：第 2 部分</h4>
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail" style="border: none" >
+                    <img src="img/y3.png" alt="" class="img-responsive" style="border: solid 1px #DDD">
+                    <h4  style="height: 40px">互联网的历史、技术和安全</h4><br/>
+                </a>
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail" style="border: none">
+                    <img src="img/t1.png" alt="" class="img-responsive" style="border: solid 1px #DDD">
+                    <h4  style="height: 40px">机器学习</h4><br/>
+                </a>
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail" style="border: none">
+                    <img src="img/t2.png" alt="" class="img-responsive" style="border: solid 1px #DDD">
+                    <h4  style="height: 40px">生物信息学方法 I</h4><br/>
+                </a>
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail" style="border: none">
+                    <img src="img/t3.png" alt="" class="img-responsive" style="border: solid 1px #DDD">
+                   <h4  style="height: 40px"> 网络安全及其十大领域</h4><br/>
+                </a>
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail" style="border: none">
+                    <img src="img/s1.png" alt="" class="img-responsive" style="border: solid 1px #DDD">
+                    <h4  style="height: 40px">微积分基础</h4><br/>
+                </a>
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail" style="border: none">
+                    <img src="img/s2.jpg" alt="" class="img-responsive" style="border: solid 1px #DDD">
+                   <h4  style="height: 40px"> 21 世纪的职场沟通</h4><br/>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid" style="text-align: center;">
+                <a href="选课目录.html" ><h4>浏览更多课程</h4></a>
+            </div>
+        </nav>
+    </div>
+
+
+</div>
+
+<div class="container">
+    <!--底部-->
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-3 "><a href="首页.html"><img src="images/logo2.png" alt="" class="img-responsive"/></a></div>
+                <div class="col-md-3 "style="margin-top: 20px"><a href="首页.html"><img src="images/logo.png"/></a></div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row ">
+                <div class="col-md-1"></div>
+                <div class="col-md-2 col-md-push-1"><a href=""><h4>关于我们</h4></a></div>
+                <div class="col-md-2 col-md-push-1"><a href=""><h4>合作伙伴</h4></a></div>
+                <div class="col-md-2 col-md-push-1"><a href=""><h4>联系我们</h4></a></div>
+                <div class="col-md-2 col-md-push-1"><a href=""><h4>更多</h4></a></div>
+                <div class="col-md-2"><a href=""><h4>帮助</h4></a></div>
+            </div>
+
+        <hr/>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">? 2015 Coursera Inc. 版权所有 - 沪ICP备15025210号</div>
+            <div class="col-md-4"></div>
+        </div>
+
+
+</div>
+
+
+</body>
+<script src="./js_file/my_js.js"></script>
+<script src="js/jquery-1.11.1.min.js"></script>
+</html>
+

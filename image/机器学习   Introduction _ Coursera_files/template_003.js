@@ -1,0 +1,1 @@
+"use strict";define("bundles/assess/questionTypes/singleNumeric/student/nls/zh/template",{"Correct Answer: &nbsp;":"正确答案是：&nbsp;","Enter answer here":"在此输入您的回答","Reveal correct answer":"显示正确答案","Sorry, that’s not what we’re looking for.&nbsp;":"对不起，答案不正确。&nbsp;","Well done!&nbsp;":"真棒！&nbsp;"});

@@ -1,0 +1,1 @@
+"use strict";define("bundles/videojs/layout/nls/zh/controls",{Cast:"投射",Download:"下载",Fullscreen:"全屏",Settings:"设置",Subtitles:"字幕","Subtitles Off":"字幕关闭"});

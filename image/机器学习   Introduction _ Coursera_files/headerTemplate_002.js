@@ -1,0 +1,1 @@
+"use strict";define("bundles/assess/questionTypes/pollBase/student/nls/zh/headerTemplate",{Poll:"单项投票"});

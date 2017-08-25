@@ -1,0 +1,1 @@
+"use strict";define("pages/open-course/item/views/nls/zh/sideNav",{"#{hours}h #{minutes}m":"#{hours}小时 #{minutes}分","#{minutes} min":"#{minutes} 分","#{seconds} sec":"#{seconds} 秒","Navigation closed":"导航关闭","Navigation open":"导航打开","Toggle navigation":"导航切换"});

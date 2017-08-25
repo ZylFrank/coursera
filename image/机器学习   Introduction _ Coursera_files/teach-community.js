@@ -1,0 +1,1 @@
+"use strict";define("nls/zh/teach-community",{"Join Confirmation":"确认加入","The invitation you are trying to accept is for another user.":"这项邀请的邀请人是其他用户。","The invitation you are trying to accept is invalid.":"这项邀请无效。","You have already accepted this invitation.":"您已经接受这项邀请。","You've been successfully added to the {groupName} private community.":"您已经成功加入私人社区{groupName}。"});

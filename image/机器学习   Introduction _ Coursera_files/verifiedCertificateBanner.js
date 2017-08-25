@@ -1,0 +1,1 @@
+"use strict";define("pages/open-course/item/views/nls/zh/verifiedCertificateBanner",{"- Get your Verified Certificate!":"- 获得认证证书","GET CERTIFIED":"获得认证","Link your coursework to your identity&nbsp;":"认证您亲自完成了课程学习&nbsp;"});

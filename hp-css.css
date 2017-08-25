@@ -1,0 +1,19 @@
+#bj-img{
+    background: url("./image/lynu.jpg");
+    height: 320px;
+}
+@media screen and (max-width:1140px) {
+    #sidebar {
+        display: none;
+    }
+}
+@media screen and (max-width:1200px) {
+    #sidebar2 {
+        display: none;
+    }
+}
+@media screen and (max-width:1000px) {
+    #sidebar3 {
+        display: none;
+    }
+}

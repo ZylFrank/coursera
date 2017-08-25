@@ -1,0 +1,1 @@
+"use strict";define("bundles/assess/questionTypes/shortanswer/student/nls/zh/template",{"Enter answer here":"在此输入您的回答","Sorry, that’s not what we’re looking for.&nbsp;":"对不起，答案不正确。&nbsp;","Well done!&nbsp;":"真棒！&nbsp;"});
